@@ -97,7 +97,10 @@
         outline: none;
         border: 2px solid black;
     }
-
+.submit
+{
+    display: none;
+}
 .submit-btn:hover{
     background-color: #e88f0a;
     font-weight: bold;
@@ -107,6 +110,12 @@
     color: black;
     
 }
+
+.hide
+{
+    display: none;
+}
+
 @media only screen and (max-width:1186px){
     .right input{
         width: 175px;

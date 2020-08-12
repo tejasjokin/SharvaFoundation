@@ -46,6 +46,11 @@
     font-size:1.6rem ;
 }
 
+.iconlist
+{
+    display: flex;
+}
+
 @media only screen and (max-width:1170px){
     .suggest p{
         width: 50%;
@@ -78,3 +83,4 @@
     }
 
 }
+

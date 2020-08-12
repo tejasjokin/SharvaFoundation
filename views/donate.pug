@@ -901,8 +901,8 @@ block content
           .right
             input(type='text' name='pincode' onchange = "pincodeValidate(event)" placeholder='Enter your PIN Code')
         .margin.btns
-          input(type="button", class = 'submit-btn' , onclick = "submitValidate()" value="Confirm Details") 
-          button( type="submit" ,class = 'submit-btn' , onclick = "submitValidate()") Proceed to Pay
+          input(type="button", class = 'submit-btn' ,id = 'confirm' , onclick = "submitValidate()" value="Confirm Details") 
+          button( type="submit" ,class = 'submit-btn submit' , id = 'submit') Proceed to Pay
 block scripts
   script
     include ../static/Javascript/donate.js

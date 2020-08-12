@@ -716,11 +716,11 @@ block content
             .left Why do you want to join us?
             .center :
             .right
-              textarea(name='cause' id='' cols='30' rows='10')
+              textarea(name='cause' id='' onchange = "reasonValidate(event)" cols='30' rows='10')
               h3
         .margin.btns
-          input(type="button",class="submit-btn", onclick = "submitValidate()" value="Confirm")
-          button(type="submit",  class = "submit-btn"  ) Submit 
+          input(type="button",class="submit-btn", onclick = "submitValidate()" value="Confirm" id = "confirm")
+          button(type="submit",  onclick = "thanks()" class = "submit-btn submit" id = "submit" ) Submit 
 block scripts
   script
     include ../static/Javascript/joinus.js
