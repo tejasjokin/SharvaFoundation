@@ -4,15 +4,13 @@
   "description": "NGO WEBSITE",
   "main": "app.js",
   "scripts": {
-    "deploy":"gh-pages -d SharvaFoundation"
+    "serve": "nodemon index.js"
   },
   "author": "Tanmay Jagtap",
   "license": "ISC",
-  "homepage": "https://github.com/tanmayjagtap/SharvaFoundation",
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "gh-pages": "^3.1.0",
     "mongo": "^0.1.0",
     "mongodb": "^3.6.0",
     "mongoose": "^5.9.28",
