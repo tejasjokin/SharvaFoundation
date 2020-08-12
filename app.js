@@ -41,6 +41,14 @@ const DonateSchema = new mongoose.Schema({
 
 const Donate = mongoose.model('Donate', DonateSchema);
 
+const ContactSchema = new mongoose.Schema({
+    name: String,
+    email: String,
+    textmessage: String,
+  });
+
+const Contact = mongoose.model('Contact', ContactSchema);
+
 
 
 
@@ -78,6 +86,7 @@ app.get('/contact', (req, res)=>{
     const params = {}
     res.status(200).render('contact.pug', params);
 })
+
 app.get('/form', (req, res)=>{
     
     const params = {}
@@ -106,14 +115,21 @@ app.post('/donate', (req, res)=>{
     myData.save().then(()=>{
         res.render( 'payment.pug');
     }).catch(()=>{
-        res.status(400).send("Unable to submit form please try again")
+        res.status(404).send("Unable to submit form please try again")
     });
 
 })
 
 
-
-
+//for contact form
+app.post('/contact', (req, res)=>{
+    var myData=new Contact(req.body);
+    myData.save().then(()=>{
+        res.redirect( 301,'/contact');
+    }).catch(()=>{
+        res.status(404).send("Unable to submit form please try again")
+    });
+})
 
 
 
