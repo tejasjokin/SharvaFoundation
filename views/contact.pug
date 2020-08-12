@@ -1,0 +1,19 @@
+extends base.pug
+block style
+    style
+      include ../static/css/home.css
+      include ../static/css/contact.css
+      include ../static/css/responsive.css
+block  content
+    div.page
+        div.suggest
+            p For Queries and Sugestions  
+            div.clickhere-btn
+                button
+                    a(href="/form") Click Here
+        div.otherinfo
+            p Contact Us at
+            p line 1
+            p line 2
+            p line 3
+            p line 4

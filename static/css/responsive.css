@@ -1,0 +1,176 @@
+@media only screen and (max-width:1205px){
+    .nav-list{
+        flex-direction: column;
+        margin-bottom: 8px;
+        
+    }
+    .nav-list li {
+        margin-bottom: 16px;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease-out;
+        height: 480px;
+        box-shadow: 0px 0px 0px;
+    }
+    .social{
+        display: none;
+    }
+    #search{
+        width: 100px;
+    }
+    .search {
+        margin: auto;
+        text-align: center;
+        width: 100%;
+    }
+    .search-btn {
+        height: 28px;
+        width: 60px;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 60px;
+    } 
+    .v-class{
+        display: none;
+    }
+    .logo img{
+        height: 100px;
+        margin-right: 0;
+        margin: 12px;
+    }
+    .nav-list li:hover .dropmenus{
+        left: 44%;
+        top: 210px;
+    }
+}
+@media only screen and (max-width:1063px){
+    .foot2{
+
+        flex-direction: column;
+    }
+#footer{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+    .rights {
+        width:100%;
+        text-align: center;
+    }
+
+    .privacy-policy{
+        text-align: center;
+    }
+    .social-foot {
+        margin: 0;
+    }
+    .foot2{
+        height: 140px;
+        margin-top: 54px;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    #mission p{
+        display: none;
+    }
+    .card1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width:500px){
+    #counter{
+        flex-direction: column;
+        height: 500px;
+    }
+    .box1{
+        margin-left: 0px;
+        width: 100%;
+        font-size: 1.8rem;
+        
+    }
+    .box2{
+        font-size: 1.8rem;
+        width: 100%;
+    }
+    .box3{
+        font-size: 1.8rem;
+        margin-right: 0px;
+        width: 100%;
+    }
+    
+   
+}
+@media only screen and (max-width:750px){
+.foot1{
+    flex-direction: column;
+    margin-bottom: 5px;
+    align-items: stretch;
+    margin-top: 25px;
+}
+.contact-box{
+    flex-direction: column;
+}
+.message textarea{
+    width: 40%;
+}
+.foot2{
+    margin-top: 120px;
+}
+.contact h2{
+    text-align: left;
+}
+.contact{
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.recent{
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.address{
+    width: 100%;
+}
+
+#mission{
+    flex-direction: column;
+    /* justify-content: center; */
+    height: 675px;
+    padding: 15px;
+}
+.card1,.card2,.card3{
+    height: 100px;
+    width: 100%;
+    margin: 2px;
+
+}
+}
+
+@media only screen and (max-width:750px){
+    #aboutSection h4{
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,105 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='../static/css/home.css')
+  link(rel='stylesheet' href='../static/css/responsive.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  title Sharva Foundation
+nav.navbar.background.h-nav
+  ul.nav-list.v-class
+    .logo
+      img(src='../static/logo.png' alt='logo')
+    li
+      a(href='#') Home
+    li
+      a(href='#') Events
+    li
+      a(href='#') Join Us
+    li
+      a(href='#aboutSection') About Us
+    li
+      a(href='#') Contact Us
+    button.donate-btn Donate
+  .rightnav.v-class
+    .social
+      ul
+        li
+          a.fa.fa-facebook(href='#')
+        li
+          a.fa.fa-twitter(href='#')
+        li
+          a.fa.fa-google(href='#')
+        li
+          a.fa.fa-youtube(href='#')
+        li
+          a.fa.fa-instagram(href='#')
+    .search
+      input#search(type='text' name='search')
+      button.search-btn Search
+  .burger
+    .line
+    .line
+    .line
+section.background.firstsection
+  p
+    | Health | Education | Food
+  button.donate-btn Donate 
+section#aboutSection
+  h2
+    | About Us
+  h4
+    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quis blanditiis reprehenderit dolore, hic
+    | eaque
+    | quo sed magnam assumenda eum pariatur quod sint quam, odio voluptate dolorum dolores vero nobis. Voluptas
+    | eligendi quod ratione necessitatibus.
+section#counter
+  .box1
+    | Crew Members
+  .box2
+    | branches
+  .box3
+    | Students
+section#mission
+  .card1
+    h1 Education
+    p
+      | Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eaque itaque dolore hic aperiam! Ea ipsa
+      | ullam nam mollitia adipisci praesentium laborum!
+  .card2
+    h1 Food
+    p
+      | Lorem ipsum dolor sit amet consectetur adipisicing elit. Id alias earum perspiciatis, hic architecto
+      | repellendus aspernatur repudiandae eum numquam ratione rem error nihil fugiat temporibus autem, nostrum
+      | necessitatibus ullam, cumque saepe reiciendis adipisci!
+  .card3
+    h1 Health
+    p
+      | Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati excepturi similique a autem dicta
+      | facilis molestiae quaerat! Voluptatibus, nostrum in, harum labore architecto consequuntur, magnam iure
+      | quos amet minima repellendus non necessitatibus maxime!
+footer#footer
+  .foot1
+    .recent
+      | Recent posts
+    .address
+      | Address
+    .contact
+      | Contact Form
+  .foot2
+    .rights  &copy; Copyrights 2020 | Sharvafoundation.com | All rights reserved 
+    .privacy-policy
+      a(href='')   Privacy Policy 
+    .social-foot.foot
+      ul
+        li
+          a.fa.fa-facebook(href='#')
+        li
+          a.fa.fa-twitter(href='#')
+        li
+          a.fa.fa-google(href='#')
+        li
+          a.fa.fa-youtube(href='#')
+        li
+          a.fa.fa-instagram(href='#')
+script(src='../static/hamburger.js')

@@ -1,0 +1,80 @@
+.page{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.suggest{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+.suggest a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    padding: 3px 12px; 
+}
+.suggest p{
+    width: 34%;
+    font-size:1.6rem ;
+    text-align: right;
+    padding-right:10px ;
+}
+.clickhere-btn{
+    width: 50%;
+    text-align: left;
+}
+.clickhere-btn button{
+    cursor: pointer;
+    height: 28px;
+    width: 100px;
+    border-radius: 4px;
+    font-size: 1rem;
+    border: 1px solid black;
+}
+.clickhere-btn button:hover{
+    background-color: #e88f0ac0;
+}
+.otherinfo{
+    margin-left: 256px;
+    margin-top: 20px;
+
+    font-size:1.6rem ;
+}
+
+@media only screen and (max-width:1170px){
+    .suggest p{
+        width: 50%;
+        text-align: left;
+        margin-left: 10px;
+    }
+    
+    .clickhere-btn{
+        width: 100%;
+    }
+
+
+    .otherinfo{
+        margin-left: 10px;
+    }
+
+}
+@media only screen and (max-width:500px){
+    .suggest{
+        flex-direction: column;
+
+    }
+
+    .suggest p{
+        width: 100%;
+    }
+    .clickhere-btn{
+        margin-top: 10px;
+        width: 100%;
+    }
+
+}

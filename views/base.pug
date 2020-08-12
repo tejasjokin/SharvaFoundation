@@ -1,0 +1,91 @@
+//- layout.pug
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  block style
+    style
+        include ../static/css/home.css
+        include ../static/css/responsive.css
+  body
+    nav.navbar.background-nav.h-nav
+      ul.nav-list.v-class
+        .logo
+          img(src='../static/logo.png' alt='logo')
+        li
+          a(href='/') Home
+        li
+          a(href='#') Events
+          div.dropmenus
+            ul
+              li
+                a(href='/events') Covid-19
+              li  
+                a(href='/events') Donation Drive
+              //- li
+              //-    a(href='/events') Event3
+        li
+          a(href='/joinus') Join Us
+        li
+          a(href='/#aboutSection') About Us
+        li
+          a(href='/contact') Contact Us
+        button.donate-btn 
+          a(href='/donate') Donate
+      .rightnav.v-class
+        div.searchbox.w-search
+          input.vissible(type="text" placeholder="Type here...")
+        .search
+          i.fa.fa-search
+      .burger
+        .line
+        .line
+        .line
+    block content
+    footer#footer
+      .foot1
+        .recent
+          h2 Upcoming Events
+          p
+           a(href="/events") Independance Day
+          p
+            a(href="/events") Donation Drive 
+          //- p 3.
+          //- p 4.
+          //- p 5.
+        //- .address
+        //-   p
+        //-     | Address
+        //-   p
+        //-     |Lorem ipsum,
+        //-   p
+        //-     | dolor sit amet consectetur
+        //-   p  
+        //-     |Ea iure consequuntur quos?
+        //-   p
+        //-     |Lorem ipsum,
+        //-   p
+        //-     | dolor sit amet consectetur
+        //-   p  
+        //-     |Ea iure consequuntur quos?
+      .foot2
+        .rights  &copy; Copyrights 2020 | sharvafoundation.org | All rights reserved 
+        .privacy-policy
+          a(href='#')   Privacy Policy 
+        .social-foot.foot
+          ul
+            li
+              a.fa.fa-foot.fa-facebook(href='https://www.facebook.com/Sharva-Foundation-571908020152850/?modal=admin_todo_tour' target='_blank')
+            li
+              a.fa.fa-foot.fa-whatsapp(href='https://wa.me/917006616995' target='_blank')
+            li
+              a.fa.fa-foot.fa-twitter(href='https://twitter.com/Sharvacharity' target='_blank')
+            li
+              a.fa.fa-foot.fa-google(href="mailto:foundationsharva@gmail.com?subject=Joining a good cause" target='_blank')
+            li
+              a.fa.fa-foot.fa-instagram(href='https://instagram.com/sharvafoundation?igshid=yubeg3h96wn4' target='_blank')
+    block scripts
+      script(src='../static/Javascript/hamburger.js')
+      script(src='../static/Javascript/counter.js')
