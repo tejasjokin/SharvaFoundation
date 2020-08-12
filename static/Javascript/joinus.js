@@ -5,6 +5,8 @@ var stateFlag = false;
 var cityFlag = false;
 var mailFlag = false;
 var addressFlag = false;
+var reasonFlag = false;
+var validationFlag = false;
 
 const nameValidate = (event) => {
 	const name  = event.target.value;
@@ -17,6 +19,19 @@ const nameValidate = (event) => {
 	else
 	{
 		nameFlag = true;
+	}
+}
+
+const reasonValidate = (event) => {
+	const reason  = event.target.value;
+	if(reason.length<20)
+	{
+		alert("The reason should contain more than 20 characters.");
+		reasonFlag = false;
+	}
+	else
+	{
+	reasonFlag = true;
 	}
 }
 
@@ -67,6 +82,8 @@ const blood = document.getElementById('bloodgroup');
 const state = document.getElementById('state');
 const city = document.getElementById('city');
 const form = document.getElementById('form');
+const confirm = document.getElementById('confirm');
+const submit = document.getElementById('submit');
 
 city.addEventListener('blur', (event) => {
 	if(event.target.value==='none')
@@ -104,10 +121,6 @@ blood.addEventListener('blur', (event) => {
 	}
 })
 
-const reset = () => {
-	console.log(blood);
-}
-
 const submitValidate = () => {
 	var flag = false;
 	if(!nameFlag)
@@ -138,9 +151,24 @@ const submitValidate = () => {
 	{
 		alert("City not selected.");
 	}
-	// form.reset(); agar isko chaaya toh reset hota and null values aa jate apne db mei kuch aur dekhna pdega
-	var popup = document.getElementById("pop");
-	popup.classList.toggle('show');
+	else if(!reasonFlag)
+	{
+		alert("Reason to join not specified.")
+	}
+	if( nameFlag===true &&
+		numberFlag===true &&
+		bloodFlag===true &&
+		stateFlag===true &&
+		cityFlag===true &&
+		mailFlag===true &&
+		addressFlag===true &&
+		reasonFlag===true &&
+		window.confirm('Are you sure you want to confirm?')===true
+	)
+	{
+		submit.classList.remove("submit");
+		confirm.classList.add('hide');
+	}
 }
 function thanks() {
 	var popup = document.getElementById("pop");

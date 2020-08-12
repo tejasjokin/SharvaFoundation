@@ -81,6 +81,8 @@ const pincodeValidate = (event) => {
 const city = document.getElementById('city');
 const state = document.getElementById('state');
 const form = document.getElementById('form');
+const confirm = document.getElementById('confirm');
+const submit = document.getElementById('submit');
 
 city.addEventListener('blur', (event) => {
 	if(event.target.value==='none')
@@ -118,6 +120,8 @@ state.addEventListener('blur', (event) => {
 })
 
 const submitValidate = () => {
+	console.log(submit);
+	console.log(confirm);
 	if(!nameFlag)
 	{
 		alert("Name field is unattended.");
@@ -150,8 +154,19 @@ const submitValidate = () => {
 	{
 		alert("Pincode is unattended.");
 	}
-	// form.reset(); agar isko chaaya toh reset hota and null values aa jate apne db mei kuch aur dekhna pdega
-	var popup = document.getElementById("pop");
-	popup.classList.toggle('show');
-
+	if(
+		nameFlag===true &&
+		mailFlag===true &&
+		numberFlag===true &&
+		addressFlag===true &&
+		cityFlag===true &&
+		stateFlag===true &&
+		countryFlag===true &&
+		pincodeFlag===true &&
+		window.confirm('Are you sure you want to confirm details?')===true
+	)
+	{
+		submit.classList.remove('submit');
+		confirm.classList.add('hide');
+	}
 }
