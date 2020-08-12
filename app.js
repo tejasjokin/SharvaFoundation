@@ -44,8 +44,6 @@ const Donate = mongoose.model('Donate', DonateSchema);
 
 
 
-
-
 // EXPRESS SPECIFIC STUFF
 app.use('/static', express.static('static')) // For serving static files
 app.use(express.urlencoded())

@@ -1,86 +1,105 @@
-.page{
+.connectbackground{
+    background:rgba(0,0,0,0.5) url('../static/bg.jpg') no-repeat center center/cover ;
+    background-blend-mode:darken ;
+    height: 200px;
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.connectbackground{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+}
+.part-1{
+    box-shadow: 1px 1px 24px rgba(0, 0, 0, 0.26);
+    width: 30%;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    width: 100%;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
 }
+.part-1 input{
+    width: 230px;
+    height: 22px;
+    margin: 4px 0;
+}
+.part-1 textarea{
+    width: 230px;
+    height: 22x;
+    margin: 4px 0;
+}
+.part-1 p{
+    margin: 4px 0;
+    font-size: 1rem;
+}
+.part-1 .btn{
+    margin: 14px 0;
+    display: block;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.part-1 .btn:hover{
+    background-color: #eeaf4f;
+    font-weight: bold;
+}
+.part-2{
 
+    width: 35%;
+    height: 260px;
 
-.suggest{
+}
+.part-2 h2{
+    margin-bottom:4px ;
+}
+.call,.mail,.address{
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 24px;
-}
-.suggest a{
-    text-decoration: none;
-    color: black;
     cursor: pointer;
-    padding: 3px 12px; 
-}
-.suggest p{
-    width: 34%;
-    font-size:1.6rem ;
-    text-align: right;
-    padding-right:10px ;
-}
-.clickhere-btn{
-    width: 50%;
-    text-align: left;
-}
-.clickhere-btn button{
     cursor: pointer;
-    height: 28px;
-    width: 100px;
-    border-radius: 4px;
-    font-size: 1rem;
-    border: 1px solid black;
+    margin: 8px 0;
 }
-.clickhere-btn button:hover{
-    background-color: #e88f0ac0;
-}
-.otherinfo{
-    margin-left: 256px;
-    margin-top: 20px;
-
-    font-size:1.6rem ;
+.fa-phone,.fa-envelope,.fa-map-marker{
+    background-color: #eeaf4f;
+    font-size: 1.2rem;
 }
 
-.iconlist
-{
-    display: flex;
-}
-
-@media only screen and (max-width:1170px){
-    .suggest p{
-        width: 50%;
-        text-align: left;
-        margin-left: 10px;
+@media only screen and (max-width:860px){
+    .part-1{
+        width: 40%;
     }
-    
-    .clickhere-btn{
-        width: 100%;
-    }
-
-
-    .otherinfo{
-        margin-left: 10px;
-    }
-
 }
-@media only screen and (max-width:500px){
-    .suggest{
+@media only screen and (max-width:630px){
+    .square{
         flex-direction: column;
-
+        height: 100%;
     }
 
-    .suggest p{
+
+    .part-1{
         width: 100%;
-    }
-    .clickhere-btn{
-        margin-top: 10px;
-        width: 100%;
+        box-shadow: none;
     }
 
 }
-
+@media only screen and (max-width:550px){
+.part-2{
+    width: 55%;
+}
+}
+@media only screen and (max-width:350px){
+.part-2{
+    width: 98%;
+}
+}
