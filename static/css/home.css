@@ -482,8 +482,9 @@ color: white;
 }
 
 .card1{
-    background: url('../static/education.jpg') no-repeat center center/cover;
+    background:rgba(0, 0, 0, 0.4) url('../static/education.jpg') no-repeat center center/cover;
     /* border: 2px solid black; */
+    background-blend-mode: darken;
     width: 30%;
     height: 196px;
     border-radius: 14px;
@@ -491,16 +492,18 @@ color: white;
 }
 
 .card2{
-    background: url('../static/food.jpg') no-repeat center center/cover;
+    background:rgba(255, 255, 255, 0.7) url('../static/food.jpg') no-repeat center center/cover;
     /* border: 2px solid black; */
+    background-blend-mode: darken;
     width: 30%;
     height: 196px;
     border-radius: 14px;
     padding: 50px 2px;
 }
 .card3{
-    background: url('../static/health.jpg') no-repeat center center/cover;
+    background:rgba(0, 0, 0, 0.4) url('../static/health.jpg') no-repeat center center/cover;
     /* border: 2px solid black; */
+    background-blend-mode: darken;
     width: 30%;
     height: 196px;
     border-radius: 14px;
@@ -510,7 +513,21 @@ color: white;
     text-decoration: none;
     color: black;
 }
+.card2 a{
+    text-decoration: none;
+    color: black;
+}
+.card3 a{
+    text-decoration: none;
+    color: black;
+}
 .card1 a:hover{
+    color: #e88f0a;
+}
+.card2 a:hover{
+    color: #e88f0a;
+}
+.card3 a:hover{
     color: #e88f0a;
 }
 
