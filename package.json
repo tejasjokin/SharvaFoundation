@@ -4,7 +4,7 @@
   "description": "NGO WEBSITE",
   "main": "app.js",
   "scripts": {
-    "deploy":"gh-pages -d Sharva Foundation"
+    "deploy":"gh-pages -d SharvaFoundation"
   },
   "author": "Tanmay Jagtap",
   "license": "ISC",
