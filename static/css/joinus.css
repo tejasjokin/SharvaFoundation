@@ -87,7 +87,7 @@
 }
 .right input{
     height: 30px;
-    width: 256px;
+    width: 40%;
     background: none;
     border: 1px solid gray
 }
@@ -96,7 +96,7 @@
     margin-bottom: 14px;
 }
 .right textarea{
-    width: 257px;
+    width: 40%;
     height: 100px;
     background: none;
 }
@@ -109,7 +109,7 @@
     
 }
 #city,#state,#bloodgroup{
-    width: 259px;
+    width: 40.5%;
     height: 26px;
     background: none;
 }
@@ -139,18 +139,10 @@
     display: flex;
 }
 @media only screen and (max-width:1186px){
-    .right input{
-        width: 175px;
-    }
-    .right textarea{
-        width: 175px;
-    }
+
     .form-base{
         margin: 0px;
         margin-left: 10px;
-    }
-    #city,#state,#bloodgroup{
-        width: 177px;
     }
     .backgroundjoinus h1{
         text-align: left;
@@ -173,6 +165,25 @@
     left: 7%;
     width: 85%;
 }
+
+
+}
+
+@media only screen and (max-width:300px){
+    .backgroundjoinus{
+        background-size: 300px 300px;
+    }
+    .right{
+        width: 100%;
+    }
+    .left{
+        width: 16%;
+    }
+    .text-box{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
 }
 
 .clickable

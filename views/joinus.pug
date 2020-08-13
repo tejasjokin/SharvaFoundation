@@ -18,26 +18,22 @@ block content
           .center :
           .right
             input(type='text' name="name" id='name' onchange = "nameValidate(event)" placeholder='Enter your Name')
-            h3
         .margin
           .left  Email Id
           .center :
           .right
             input(type='email' name='email' onchange = "mailValidate(event)" placeholder='Enter your Email')
-            h3
         .margin
           .left Phone Number
           .center :
           .right
             input(type='phone' name='phone' onblur = "numberValidate(event)" placeholder='Enter your Contact number')
-            h3
         .margin
           .text-box
             .left  Address
             .center :
             .right
-              textarea(name='address'  onchange = "addressValidate(event)" cols='30' rows='10')
-              h3
+              textarea(name='address'  onchange = "addressValidate(event)")
         .margin
           .left City
           .center :
@@ -647,7 +643,6 @@ block content
               option(value='Yanam')  Yanam 
               option(value='Yavatmal')  Yavatmal 
               option(value='Zunheboto')  Zunheboto
-            h3
         .margin
           .left State
           .center :
@@ -689,9 +684,7 @@ block content
               option(value='Uttarakhand') Uttarakhand
               option(value='Uttar Pradesh') Uttar Pradesh
               option(value='West Bengal') West Bengal
-            h3
         .margin
-          .text-box
             .left Blood Group
             .center :
             .right
@@ -710,14 +703,12 @@ block content
                 option(value='O Negative') O Negative
                 option(value='O Unknown') O Unknown
                 option(value='Unknown') Unknown
-              h3
         .margin
           .text-box
             .left Why do you want to join us?
             .center :
             .right
-              textarea(name='cause' id='' onchange = "reasonValidate(event)" cols='30' rows='10')
-              h3
+              textarea(name='cause' id='' onchange = "reasonValidate(event)" )
         .margin.btns
           input(type="button",class="submit-btn", onclick = "submitValidate()" value="Confirm" id = "confirm")
           button(type="submit",  onclick = "thanks()" class = "submit-btn submit" id = "submit" ) Submit 

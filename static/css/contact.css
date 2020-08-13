@@ -12,6 +12,9 @@
     justify-content: center;
     align-items: center;
 }
+.motto{
+ text-align: center;
+}
 .square{
     display: flex;
     justify-content: space-evenly;
@@ -76,8 +79,8 @@
 }
 
 .submit-btn {
-        font-size: 1.4rem;
-        margin-left: 198px;
+        font-size: 1.1rem;
+        margin-left: 160px;
         /* margin-top: 20px; */
         height: 36px;
         width: 100px;
@@ -106,10 +109,10 @@
 {
     display: none;
 }
-#confirm
+#confirm,#submit
 {
-    width: 100px;
-    height: 40px;
+    width: 90px;
+    height: 30px;
 }
 @media only screen and (max-width:860px){
     .part-1{

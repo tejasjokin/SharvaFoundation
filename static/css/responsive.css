@@ -172,5 +172,8 @@
     #aboutSection h4{
         width: 100%;
     }
+    .card1 a,.card2 a,.card3 a{
+        font-size:1.8rem ;
+    }
 }
 
