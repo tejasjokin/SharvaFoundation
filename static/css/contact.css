@@ -75,9 +75,49 @@
     font-size: 1.2rem;
 }
 
+.submit-btn {
+        font-size: 1.4rem;
+        margin-left: 198px;
+        /* margin-top: 20px; */
+        height: 36px;
+        width: 100px;
+        border-radius: 4px;
+        cursor: pointer;
+        outline: none;
+        border: 2px solid black;
+    }
+.submit-btn:hover{
+    background-color: #e88f0a;
+    font-weight: bold;
+}
+.submit
+{
+    display: none;
+}
+.margin{
+    margin-bottom: 10px;
+}
+
+.btns{
+    display: flex;
+}
+
+.hide
+{
+    display: none;
+}
+#confirm
+{
+    width: 100px;
+    height: 40px;
+}
 @media only screen and (max-width:860px){
     .part-1{
         width: 40%;
+    }
+    .submit-btn{
+        margin-left:20px;
+        margin-bottom: 10px;
     }
 }
 @media only screen and (max-width:630px){
