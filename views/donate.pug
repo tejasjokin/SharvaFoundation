@@ -13,23 +13,23 @@ block content
           .left  Name
           .center :
           .right
-            input(type='text' onchange = "nameValidate(event)" name='name' placeholder='Enter your Name')
+            input(type='text' class = 'input' onchange = "nameValidate(event)" name='name' placeholder='Enter your Name')
         .margin
           .left  Email Id
           .center :
           .right
-            input(type='email' name='email' onchange = "mailValidate(event)" placeholder='Enter your Email')
+            input(type='email' name='email' class = 'input' onchange = "mailValidate(event)" placeholder='Enter your Email')
         .margin
           .left Phone Number
           .center :
           .right
-            input(type='phone' onblur = "numberValidate(event)" name='phone' placeholder='Enter your Contact number')
+            input(type='phone' class = 'input' onblur = "numberValidate(event)" name='phone' placeholder='Enter your Contact number')
         .margin
           .text-box
             .left  Address
             .center :
             .right 
-              textarea(name='address'  onchange = "addressValidate(event)" cols='30' rows='10')
+              textarea(name='address'  class = 'input' onchange = "addressValidate(event)" cols='30' rows='10')
         .margin
           .left City
           .center :
@@ -899,7 +899,7 @@ block content
           .left  Pin Code
           .center :
           .right
-            input(type='text' name='pincode' onchange = "pincodeValidate(event)" placeholder='Enter your PIN Code')
+            input(type='text' name='pincode' class = 'input' onchange = "pincodeValidate(event)" placeholder='Enter your PIN Code')
         .margin.btns
           input(type="button", class = 'submit-btn' ,id = 'confirm' , onclick = "submitValidate()" value="Confirm Details") 
           button( type="submit" ,class = 'submit-btn submit' , id = 'submit') Proceed to Pay

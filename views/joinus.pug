@@ -17,28 +17,28 @@ block content
           .left  Name
           .center :
           .right
-            input(type='text' name="name" id='name' onchange = "nameValidate(event)" placeholder='Enter your Name')
+            input(type='text' name="name" class = 'input' onchange = "nameValidate(event)" placeholder='Enter your Name')
         .margin
           .left  Email Id
           .center :
           .right
-            input(type='email' name='email' onchange = "mailValidate(event)" placeholder='Enter your Email')
+            input(type='email' name='email' class = 'input' onchange = "mailValidate(event)" placeholder='Enter your Email')
         .margin
           .left Phone Number
           .center :
           .right
-            input(type='phone' name='phone' onblur = "numberValidate(event)" placeholder='Enter your Contact number')
+            input(type='phone' name='phone' class = 'input' onblur = "numberValidate(event)" placeholder='Enter your Contact number')
         .margin
           .text-box
             .left  Address
             .center :
             .right
-              textarea(name='address'  onchange = "addressValidate(event)")
+              textarea(name='address' class = 'input' onchange = "addressValidate(event)")
         .margin
           .left City
           .center :
           .right
-            select#city(name='city')
+            select#city(name='city' class = 'citySelect')
               option(value='none') -- Select City --
               option(value='Adilabad')  Adilabad 
               option(value='Agra')  Agra 
@@ -708,7 +708,7 @@ block content
             .left Why do you want to join us?
             .center :
             .right
-              textarea(name='cause' id='' onchange = "reasonValidate(event)" )
+              textarea(name='cause' id='' class = 'input' onchange = "reasonValidate(event)" )
         .margin.btns
           input(type="button",class="submit-btn", onclick = "submitValidate()" value="Confirm" id = "confirm")
           button(type="submit",  onclick = "thanks()" class = "submit-btn submit" id = "submit" ) Submit 

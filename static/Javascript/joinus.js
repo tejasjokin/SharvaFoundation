@@ -8,6 +8,15 @@ var addressFlag = false;
 var reasonFlag = false;
 var validationFlag = false;
 
+const input = document.getElementsByClassName('input');
+const input1 = Object.entries(input);
+const lock = () => {
+	input1.forEach((item) => {
+		item[1].setAttribute("readonly",true);
+	})
+}
+
+
 const nameValidate = (event) => {
 	const name  = event.target.value;
 	if(name.length<3 || name.length>15)
@@ -84,6 +93,39 @@ const city = document.getElementById('city');
 const form = document.getElementById('form');
 const confirm = document.getElementById('confirm');
 const submit = document.getElementById('submit');
+
+const bloodLock = () => {
+	const options = Object.entries(blood.options);
+	const selected = blood.value;
+	options.forEach((item) => {
+		if(item[1].value!==selected)
+		{
+			item[1].remove();
+		}
+	})
+}
+
+const stateLock = () => {
+	const options = Object.entries(state.options);
+	const selected = state.value;
+	options.forEach((item) => {
+		if(item[1].value!==selected)
+		{
+			item[1].remove();
+		}
+	})
+}
+
+const cityLock = () => {
+	const options = Object.entries(city.options);
+	const selected = city.value;
+	options.forEach((item) => {
+		if(item[1].value!==selected)
+		{
+			item[1].remove();
+		}
+	})
+}
 
 city.addEventListener('blur', (event) => {
 	if(event.target.value==='none')
@@ -168,6 +210,10 @@ const submitValidate = () => {
 	{
 		submit.classList.remove("submit");
 		confirm.classList.add('hide');
+		lock();
+		cityLock();
+		bloodLock();
+		stateLock();
 	}
 }
 function thanks() {
