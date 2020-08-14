@@ -13,11 +13,11 @@ block  content
             h1 Contact
             form(action="/contact" method="post")
                 p Name :
-                input(type="text" name="name" id = "name" onchange = "nameValidate(event)")
+                input(type="text" class = 'input' name="name" id = "name" onchange = "nameValidate(event)")
                 p Email :
-                input(type="email" name="email" onchange = "mailValidate(event)")
+                input(type="email" name="email" class = 'input' onchange = "mailValidate(event)")
                 p Message :
-                textarea(name="textmessage" onchange = "messageValidate(event)")
+                textarea(name="textmessage" class = 'input' onchange = "messageValidate(event)")
                 .margin.btns
                     input(type="button",class="submit-btn", onclick = "submitValidate()" value="Confirm" id = "confirm")
                     button(type="submit",  onclick = "thanks()" class = "submit-btn submit" id = "submit" ) Submit 

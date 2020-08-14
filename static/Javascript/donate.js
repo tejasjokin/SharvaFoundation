@@ -7,6 +7,14 @@ var stateFlag = false;
 var countryFlag = false;
 var pincodeFlag = false;
 
+const input = document.getElementsByClassName('input');
+const input1 = Object.entries(input);
+const lock = () => {
+	input1.forEach((item) => {
+		item[1].setAttribute("readonly",true);
+	})
+}
+
 const nameValidate = (event) => {
 	const name  = event.target.value;
 	if(name.length<5 || name.length>15)
@@ -80,9 +88,43 @@ const pincodeValidate = (event) => {
 
 const city = document.getElementById('city');
 const state = document.getElementById('state');
+const country = document.getElementById('country');
 const form = document.getElementById('form');
 const confirm = document.getElementById('confirm');
 const submit = document.getElementById('submit');
+
+const cityLock = () => {
+	const options = Object.entries(city.options);
+	const selected = city.value;
+	options.forEach((item) => {
+		if(item[1].value!==selected)
+		{
+			item[1].remove();
+		}
+	})
+}
+
+const stateLock = () => {
+	const options = Object.entries(state.options);
+	const selected = state.value;
+	options.forEach((item) => {
+		if(item[1].value!==selected)
+		{
+			item[1].remove();
+		}
+	})
+}
+
+const countryLock = () => {
+	const options = Object.entries(country.options);
+	const selected = country.value;
+	options.forEach((item) => {
+		if(item[1].value!==selected)
+		{
+			item[1].remove();
+		}
+	})
+}
 
 city.addEventListener('blur', (event) => {
 	if(event.target.value==='none')
@@ -107,7 +149,7 @@ state.addEventListener('blur', (event) => {
 		stateFlag = true;
 	}	
 })
-state.addEventListener('blur', (event) => {
+country.addEventListener('blur', (event) => {
 	if(event.target.value==='none')
 	{
 		alert("Please enter your country");
@@ -120,8 +162,6 @@ state.addEventListener('blur', (event) => {
 })
 
 const submitValidate = () => {
-	console.log(submit);
-	console.log(confirm);
 	if(!nameFlag)
 	{
 		alert("Name field is unattended.");
@@ -168,5 +208,9 @@ const submitValidate = () => {
 	{
 		submit.classList.remove('submit');
 		confirm.classList.add('hide');
+		lock();
+		cityLock();
+		stateLock();
+		countryLock();
 	}
 }

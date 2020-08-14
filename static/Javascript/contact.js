@@ -5,6 +5,14 @@ var messageFlag = false;
 const confirm = document.getElementById('confirm');
 const submit = document.getElementById('submit');
 
+const input = document.getElementsByClassName('input');
+const input1 = Object.entries(input);
+const lock = () => {
+	input1.forEach((item) => {
+		item[1].setAttribute("readonly",true);
+	})
+}
+
 const nameValidate = (event) => {
 	const name  = event.target.value;
 	if(name.length<3 || name.length>15)
@@ -69,5 +77,6 @@ const submitValidate = () => {
 	{
 		submit.classList.remove('submit');
 		confirm.classList.add('hide');
+		lock();
 	}
 }
