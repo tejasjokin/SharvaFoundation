@@ -13,8 +13,9 @@
     "express": "^4.17.1",
     "mongo": "^0.1.0",
     "mongodb": "^3.6.0",
-    "mongoose": "^5.9.28",
+    "mongoose": "^5.10.0",
     "nodemon": "^2.0.4",
+    "packages": "0.0.8",
     "pug": "^3.0.0"
   }
 }
