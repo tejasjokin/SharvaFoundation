@@ -9,29 +9,29 @@ head
     style
         include ../static/css/home.css
         include ../static/css/responsive.css
-  body
+  body 
     nav.navbar.background-nav.h-nav
       ul.nav-list.v-class
         .logo
           img(src='../static/logo.png' alt='logo')
         li
-          a(href='/') Home
+          a(href='/' class=" " id="home" onclick="activateHome()") Home
         li
-          a(href='#') Events
+          a(href='#' class=" " id="events" onclick="activateEvents()") Events
           div.dropmenus
             ul
               li
-                a(href='/events') Covid-19
-              li  
-                a(href='/events') Donation Drive
+                a(href='/covid') Covid-19
+              //- li  
+              //-   a(href='/events') Donation Drive
               //- li
               //-    a(href='/events') Event3
         li
-          a(href='/joinus') Join Us
+          a(href='/joinus'  class=" " id="joinus" onclick="activateJoinus()") Join Us
         li
-          a(href='/#aboutSection') About Us
+          a(href='/#aboutSection' class=" " id="aboutus" onclick="activateAboutus()") About Us
         li
-          a(href='/contact') Contact Us
+          a(href='/contact' class=" " id="contactus" onclick="activateContactus()") Contact Us
         button.donate-btn 
           a(href='/donate') Donate
       .rightnav.v-class
@@ -49,9 +49,9 @@ head
         .recent
           h2 Upcoming Events
           p
-           a(href="/events") Independance Day
-          p
-            a(href="/events") Donation Drive 
+           a(href="/independence") Independance Day
+          //- p
+          //-   a(href="/events") Donation Drive 
           //- p 3.
           //- p 4.
           //- p 5.

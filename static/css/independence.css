@@ -1,0 +1,49 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.text{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+}
+.text h1{
+    text-align:center;
+    margin-bottom: 6px;
+    font-size: 2.0rem;
+}
+.text p{
+    text-align: left;
+    width: 96%;
+    margin: 4px 4px 4px 12px;
+}
+.bold{
+    font-weight: bold;
+}
+.images{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    background-color: #e88f0a;
+}
+
+
+.smallscreen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smallscreen img{
+    height: 212px;
+    width: 230px;
+    margin: 10px 10px;
+}

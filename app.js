@@ -87,10 +87,10 @@ app.get('/contact', (req, res)=>{
     res.status(200).render('contact.pug', params);
 })
 
-app.get('/form', (req, res)=>{
+app.get('/independence', (req, res)=>{
     
     const params = {}
-    res.status(200).render('form.pug', params);
+    res.status(200).render('independence.pug', params);
 })
 
 
@@ -136,10 +136,10 @@ app.post('/contact', (req, res)=>{
 
 
 
-app.get('/events', (req, res)=>{
+app.get('/covid', (req, res)=>{
     
     const params = {}
-    res.status(200).render('events.pug', params);
+    res.status(200).render('covid.pug', params);
 })
 
 

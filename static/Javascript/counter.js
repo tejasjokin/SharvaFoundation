@@ -10,7 +10,7 @@ function runCounter() {
             if (displayedCount < target) {
                 counter.innerText = Math.ceil(displayedCount + step);
                 setTimeout(countIt, 25);
-                console.log(displayedCount);
+                // console.log(displayedCount);
             }
             else {
                 counter.innerText = target;

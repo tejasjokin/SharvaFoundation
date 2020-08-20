@@ -54,7 +54,7 @@
     border-radius: 4px;
 }
 .part-1 .btn:hover{
-    background-color: #eeaf4f;
+    background-color: #e88f0a;
     font-weight: bold;
 }
 .part-2{
@@ -74,7 +74,7 @@
     margin: 8px 0;
 }
 .fa-phone,.fa-envelope,.fa-map-marker{
-    background-color: #eeaf4f;
+    background-color: #e88f0a;
     font-size: 1.2rem;
 }
 

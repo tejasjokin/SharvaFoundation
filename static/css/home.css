@@ -132,6 +132,10 @@
     font-weight: bold;
     color:#e88f0a;
 }
+.nav-list li a.active{
+    color:#e88f0a;
+    font-weight: bold;
+}
 /* ----------------------------dropdown------------------------------- */
 
 
@@ -227,7 +231,7 @@ border-radius: 9px;
     outline: none;
     /* border-radius: 28px; */
     border: 2px solid white;
-    background:#e88f0ab7;
+    background:#e88f0a;
     cursor: pointer;
 }
 
@@ -254,7 +258,7 @@ border-radius: 9px;
 }
 .bg:hover{
     color:black;
-    background: #e88f0ac9;
+    background: #e88f0a;
     border: 2px solid black;
 
 }
