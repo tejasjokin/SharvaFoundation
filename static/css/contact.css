@@ -19,7 +19,6 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 400px;
 }
 .part-1{
     box-shadow: 1px 1px 24px rgba(0, 0, 0, 0.26);

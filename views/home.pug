@@ -1,7 +1,6 @@
 extends base.pug
-
 block content
-  section.background.firstsection
+  section.background.firstsection(onload="activateHome()")
     h1.tagline लोका: समस्ता: सुखिनो भवन्तु ।
     a(href='/donate')
       button.donate-btn.bg Donate 

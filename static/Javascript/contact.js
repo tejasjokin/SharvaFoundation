@@ -1,3 +1,4 @@
+
 var nameFlag = false;
 var mailFlag = false;
 var messageFlag = false;
@@ -79,4 +80,15 @@ const submitValidate = () => {
 		confirm.classList.add('hide');
 		lock();
 	}
+}
+
+
+let Home=document.getElementById('home'); 
+let events=document.getElementById('events'); 
+let joinus=document.getElementById('joinus'); 
+let aboutus=document.getElementById('aboutus'); 
+let contactus=document.getElementById('contactus');  
+
+onload=function activateContactus(){
+	contactus.className="active";
 }

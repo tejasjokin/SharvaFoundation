@@ -15,9 +15,9 @@ head
         .logo
           img(src='../static/logo.png' alt='logo')
         li
-          a(href='/' class=" " id="home" onclick="activateHome()") Home
+          a(href='/' id="home") Home
         li
-          a(href='#' class=" " id="events" onclick="activateEvents()") Events
+          a(href='#'  id="events") Events
           div.dropmenus
             ul
               li
@@ -27,13 +27,13 @@ head
               //- li
               //-    a(href='/events') Event3
         li
-          a(href='/joinus'  class=" " id="joinus" onclick="activateJoinus()") Join Us
+          a(href='/joinus' id="joinus") Join Us
         li
-          a(href='/#aboutSection' class=" " id="aboutus" onclick="activateAboutus()") About Us
+          a(href='/#aboutSection'  id="aboutus") About Us
         li
-          a(href='/contact' class=" " id="contactus" onclick="activateContactus()") Contact Us
+          a(href='/contact' id="contactus") Contact Us
         button.donate-btn 
-          a(href='/donate') Donate
+          a(href='/donate' id="donateus") Donate
       .rightnav.v-class
         div.searchbox.w-search
           input.vissible(type="text" placeholder="Type here...")
@@ -47,7 +47,7 @@ head
     footer#footer
       .foot1
         .recent
-          h2 Upcoming Events
+          h2 Recent Events
           p
            a(href="/independence") Independance Day
           //- p

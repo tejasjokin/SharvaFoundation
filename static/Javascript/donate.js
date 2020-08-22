@@ -214,3 +214,15 @@ const submitValidate = () => {
 		countryLock();
 	}
 }
+
+
+let Home=document.getElementById('home'); 
+let events=document.getElementById('events'); 
+let joinus=document.getElementById('joinus'); 
+let aboutus=document.getElementById('aboutus'); 
+let contactus=document.getElementById('contactus');  
+let donateus=document.getElementById('donateus');  
+
+onload=function activateContactus(){
+	donateus.className="activeDonate";
+}
