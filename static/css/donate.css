@@ -35,7 +35,7 @@
     background: rgb(255 255 255 / 61%);
 }
 .backgrounddonateus{
-    background: url('../static/logo.png') no-repeat center ;
+    background: url('../static/images/logo.png') no-repeat center ;
     /* background-size: cover; */
     background-size: 400px 377px;
 

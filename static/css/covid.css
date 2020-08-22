@@ -8,25 +8,25 @@
     backface-visibility: hidden;
     animation: slidingbg 50s linear infinite 0s;
     animation-timing-function: ease-in-out;
-    background-image: url('/static/bg.jpg');
+    background-image: url('/static/images/bg.jpg');
 
 }
 
 @keyframes slidingbg{
     0% {
-        background-image:url('/static/bg.jpg');
+        background-image:url('/static/images/bg.jpg');
     }
     25% {
-        background-image:url('/static/1.jpg');
+        background-image:url('/static/images/1.jpg');
     }
     50% {
-        background-image:url('/static/2.jpg');
+        background-image:url('/static/images/2.jpg');
     }
     75% {
-        background-image:url('/static/3.jpg');
+        background-image:url('/static/images/3.jpg');
     }
     100% {
-        background-image:url('/static/bg.jpg');
+        background-image:url('/static/images/bg.jpg');
     }
  
 }
@@ -64,4 +64,21 @@
 
 .content h1 a:hover{
     color: #e88f0a;
+}
+
+@media only screen and (max-width:450px){
+    .content{
+        flex-direction: column;
+        height: 100%;
+    }
+    .content img{
+        width: 50%;
+        margin:10px 0;
+    }
+}
+
+@media only screen and (max-width:940px){
+    .content img{
+        height:200px ;
+    }
 }

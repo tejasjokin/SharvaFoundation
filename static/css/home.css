@@ -285,19 +285,19 @@ border-radius: 9px;
     backface-visibility: hidden;
     animation: slidingbg 50s linear infinite 0s;
     animation-timing-function: ease-in-out;
-    background-image: url('/static/bg.jpg');
+    background-image: url('/static/images/bg.jpg');
 
 }
 
 @keyframes slidingbg{
     0% {
-        background-image:url('/static/bg.jpg');
+        background-image:url('/static/images/bg.jpg');
     }
     25% {
-        background-image:url('/static/1.jpg');
+        background-image:url('/static/images/1.jpg');
     }
     50% {
-        background-image:url('/static/2.jpg');
+        background-image:url('/static/images/2.jpg');
     }
     75% {
         background-image:url('/static/3.jpg');
@@ -420,7 +420,7 @@ color: white;
 }
 
 .card1{
-    background:rgba(0, 0, 0, 0.4) url('../static/education.jpg') no-repeat center center/cover;
+    background:rgba(0, 0, 0, 0.4) url('../static/images/education.jpg') no-repeat center center/cover;
     /* border: 2px solid black; */
     background-blend-mode: darken;
     width: 30%;
@@ -430,7 +430,7 @@ color: white;
 }
 
 .card2{
-    background:rgba(255, 255, 255, 0.7) url('../static/food.jpg') no-repeat center center/cover;
+    background:rgba(255, 255, 255, 0.7) url('../static/images/food.jpg') no-repeat center center/cover;
     /* border: 2px solid black; */
     background-blend-mode: darken;
     width: 30%;
@@ -439,7 +439,7 @@ color: white;
     padding: 50px 2px;
 }
 .card3{
-    background:rgba(0, 0, 0, 0.4) url('../static/health.jpg') no-repeat center center/cover;
+    background:rgba(0, 0, 0, 0.4) url('../static/images/health.jpg') no-repeat center center/cover;
     /* border: 2px solid black; */
     background-blend-mode: darken;
     width: 30%;

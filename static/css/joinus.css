@@ -42,7 +42,7 @@
 .show
 {
     display: block;
-    background: white url('../static/logo.png') no-repeat center;
+    background: white url('../static/images/logo.png') no-repeat center;
     background-size: 200px 200px;
 
 }
@@ -65,7 +65,7 @@
     font-size: 1.1rem;
 }
 .backgroundjoinus{
-    background: url('../static/logo.png') no-repeat center ;
+    background: url('../static/images/logo.png') no-repeat center ;
     /* background-size: cover; */
 
 }
