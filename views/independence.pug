@@ -5,6 +5,21 @@ block style
       include ../static/css/independence.css
       include ../static/css/responsive.css
 block content
+    section.imagesSlider
+        .wrap
+            #cross( onclick="exit()").fa.fa-times
+            #arrow-left.arrow
+            #slider
+                .slide.slide1
+                    .slide-content
+                        //- span Image One
+                .slide.slide2
+                    .slide-content
+                        //- span Image Two
+                .slide.slide3
+                    .slide-content
+                        //- span Image Three
+            #arrow-right.arrow
     section.main
         div.text
             h1 Independence Day
@@ -19,13 +34,14 @@ block content
             p.bold Advayta Zadoo (Notebooks)
         div.images
             div.smallscreen
-                img(src="../static/images/a.jpg", alt="1")
-                img(src="../static/images/b.jpg", alt="2")
-                img(src="../static/images/c.jpg", alt="3")
-                img(src="../static/images/g.jpg", alt="1")
-                img(src="../static/images/e.jpg", alt="2")
-                img(src="../static/images/f.jpg", alt="3")
+                img(src="../static/images/a.jpg", alt="1" ,onclick="imagesSlider()")
+                img(src="../static/images/b.jpg", alt="2" ,onclick="imagesSlider()")
+                img(src="../static/images/c.jpg", alt="3",onclick="imagesSlider()")
+                img(src="../static/images/g.jpg", alt="1" ,onclick="imagesSlider()")
+                img(src="../static/images/e.jpg", alt="2",onclick="imagesSlider()")
+                img(src="../static/images/f.jpg", alt="3",onclick="imagesSlider()")
 block scripts
   script
     include ../static/Javascript/hamburger.js
     include ../static/Javascript/activateEvents.js
+    include ../static/Javascript/independence.js

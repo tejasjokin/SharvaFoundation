@@ -300,10 +300,10 @@ border-radius: 9px;
         background-image:url('/static/images/2.jpg');
     }
     75% {
-        background-image:url('/static/3.jpg');
+        background-image:url('/static/images/3.jpg');
     }
     100% {
-        background-image:url('/static/bg.jpg');
+        background-image:url('/static/images/bg.jpg');
     }
  
 }
@@ -427,8 +427,23 @@ color: white;
     height: 196px;
     border-radius: 14px;
     padding: 50px 2px;
+    transition:0.5s;
 }
-
+.card1:hover{
+    z-index: 1;
+    transform:scale(1.07);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, .5);
+}
+.card2:hover{
+    z-index: 1;
+    transform:scale(1.07);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, .5);
+}
+.card3:hover{
+    z-index: 1;
+    transform:scale(1.07);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, .5);
+}
 .card2{
     background:rgba(255, 255, 255, 0.7) url('../static/images/food.jpg') no-repeat center center/cover;
     /* border: 2px solid black; */
@@ -437,6 +452,7 @@ color: white;
     height: 196px;
     border-radius: 14px;
     padding: 50px 2px;
+    transition:0.5s;
 }
 .card3{
     background:rgba(0, 0, 0, 0.4) url('../static/images/health.jpg') no-repeat center center/cover;
@@ -446,6 +462,7 @@ color: white;
     height: 196px;
     border-radius: 14px;
     padding: 50px 2px;
+    transition:0.5s;
 }
 .card1 a{
     text-decoration: none;
