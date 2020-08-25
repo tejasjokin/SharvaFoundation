@@ -145,3 +145,14 @@
     width: 98%;
 }
 }
+
+
+@media only screen and (max-width:250px){
+    .call,.mail,.address{
+        flex-direction: column;
+    }
+
+    .part-2{
+        height: 100%;
+    }
+}

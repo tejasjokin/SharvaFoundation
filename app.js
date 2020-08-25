@@ -14,12 +14,17 @@ const port = 80;
 
 const JoinUsSchema = new mongoose.Schema({
     name: String,
+    DOB: String,
     email: String,
     phone: String,
-    address: String,
-    city: String,
-    state: String,
+    per_address: String,
+    per_city: String,
+    per_state: String,
+    cur_address: String,
+    cur_city: String,
+    cur_state: String,
     blood_group: String,
+    category: String,
     cause: String
 
   });

@@ -87,7 +87,7 @@
 }
 .right input{
     height: 30px;
-    width: 40%;
+    width: 36%;
     background: none;
     border: 1px solid gray
 }
@@ -96,7 +96,7 @@
     margin-bottom: 14px;
 }
 .right textarea{
-    width: 40%;
+    width: 36%;
     height: 100px;
     background: none;
 }
@@ -109,7 +109,7 @@
     
 }
 #city,#state,#bloodgroup{
-    width: 40.5%;
+    width: 36.4%;
     height: 26px;
     background: none;
 }
@@ -165,9 +165,21 @@
     left: 7%;
     width: 85%;
 }
-
-
 }
+
+@media only screen and (max-width:450px){
+    .right input{
+        width:62%;
+    }
+    .right textarea{
+        width: 62%;
+    }
+    #city,#state,#bloodgroup{
+        width: 62%;
+    }
+}
+
+
 
 @media only screen and (max-width:300px){
     .backgroundjoinus{

@@ -23,7 +23,7 @@ block content
           .left  DOB
           .center :
           .right
-            input(type='date' name="name" class = 'input' onchange = "nameValidate(event)" placeholder='DD/MM/YYYY')
+            input(type='date' name="DOB" class = 'input' onchange = "nameValidate(event)" placeholder='DD/MM/YYYY')
         h2 Contact Information
         .margin
           .left  Email Id
@@ -34,18 +34,18 @@ block content
           .left Phone Number
           .center :
           .right
-            input(type='phone' name='phone' class = 'input' onblur = "numberValidate(event)" placeholder='Enter your Contact number')
+            input(type='phone' name='phone' class = 'input' onblur = "numberValidate(event)" placeholder='Enter Contact Details')
         .margin
           .text-box
             .left Permanent Address
             .center :
             .right
-              textarea(name='address' class = 'input' onchange = "addressValidate(event)")
+              textarea(name='per_address' class = 'input' onchange = "addressValidate(event)")
         .margin
           .left City
           .center :
           .right
-            select#city(name='city' class = 'citySelect')
+            select#city(name='per_city' class = 'citySelect')
               option(value='none') -- Select City --
               option(value='Adilabad')  Adilabad 
               option(value='Agra')  Agra 
@@ -654,7 +654,7 @@ block content
           .left State
           .center :
           .right
-            select#state(name='state')
+            select#state(name='per_state')
               option(value='none') -- Select State --
               option(value='Andaman and Nicobar') Andaman and Nicobar
               option(value='Andhra Pradesh') Andhra Pradesh
@@ -696,12 +696,12 @@ block content
             .left Current Address
             .center :
             .right
-              textarea(name='address' class = 'input' onchange = "addressValidate(event)")
+              textarea(name='cur_address' class = 'input' onchange = "addressValidate(event)")
         .margin
           .left City
           .center :
           .right
-            select#city(name='city' class = 'citySelect')
+            select#city(name='cur_city' class = 'citySelect')
               option(value='none') -- Select City --
               option(value='Adilabad')  Adilabad 
               option(value='Agra')  Agra 
@@ -1310,7 +1310,7 @@ block content
           .left State
           .center :
           .right
-            select#state(name='state')
+            select#state(name='cur_state')
               option(value='none') -- Select State --
               option(value='Andaman and Nicobar') Andaman and Nicobar
               option(value='Andhra Pradesh') Andhra Pradesh
@@ -1353,19 +1353,24 @@ block content
             .right
               select#bloodgroup(name='blood_group')
                 option(value='none') --Select BloodGroup--
-                option(value='A Positive') A Positive
-                option(value='A Negative') A Negative
-                option(value='A Unknown') A Unknown
-                option(value='B Positive') B Positive
-                option(value='B Negative') B Negative
-                option(value='B Unknown') B Unknown
-                option(value='AB Positive') AB Positive
-                option(value='AB Negative') AB Negative
-                option(value='AB Unknown') AB Unknown
-                option(value='O Positive') O Positive
-                option(value='O Negative') O Negative
-                option(value='O Unknown') O Unknown
-                option(value='Unknown') Unknown
+                option(value='A Positive') A +ve
+                option(value='A Negative') A -ve
+                option(value='B Positive') B +ve
+                option(value='B Negative') B -ve
+                option(value='AB Positive') AB +ve
+                option(value='AB Negative') AB -ve
+                option(value='O Positive') O +ve
+                option(value='O Negative') O -ve
+        h2 Individual's Category
+        .margin
+            .left Category
+            .center :
+            .right
+              select#bloodgroup(name='category')
+                option(value='none') --Select Category--
+                option(value='working') Working
+                option(value='student') Student
+                option(value='other') Other
         .margin
           .text-box
             .left Why do you want to join us?
