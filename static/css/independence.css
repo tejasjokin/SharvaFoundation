@@ -189,3 +189,10 @@ border-color:transparent #e88f0a transparent transparent;
         height: 100%;
     }
 }
+
+
+@media only screen and (max-width: 1063px)
+{#footer {
+  
+    height: 60%;
+}}
