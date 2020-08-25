@@ -108,7 +108,7 @@
     align-items: center;
     
 }
-#city,#state,#bloodgroup{
+#city,#state,#bloodgroup,#category,#cur_state,#cur_city{
     width: 36.4%;
     height: 26px;
     background: none;
@@ -174,7 +174,7 @@
     .right textarea{
         width: 62%;
     }
-    #city,#state,#bloodgroup{
+    #city,#state,#bloodgroup,#category,#cur_state,#cur_city{
         width: 62%;
     }
 }
