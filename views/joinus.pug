@@ -23,7 +23,7 @@ block content
           .left  DOB
           .center :
           .right
-            input(type='date' name="DOB" class = 'input' onchange = "nameValidate(event)" placeholder='DD/MM/YYYY')
+            input(type='date' name="DOB" class = 'input' onchange = "dateValidate(event)" placeholder='DD/MM/YYYY')
         h2 Contact Information
         .margin
           .left  Email Id
@@ -40,7 +40,7 @@ block content
             .left Permanent Address
             .center :
             .right
-              textarea(name='per_address' class = 'input' onchange = "addressValidate(event)")
+              textarea(id = 'permanentAddress' name='per_address' class = 'input' onchange = "addressValidate(event)")
         .margin
           .left City
           .center :
@@ -692,11 +692,17 @@ block content
               option(value='Uttar Pradesh') Uttar Pradesh
               option(value='West Bengal') West Bengal
         .margin
+            .checkboxWrapper 
+              .but
+                  input(type='checkbox' onclick='addressHandler(event)' class = 'checkbox')
+              .para
+                p  Same as Permanent Address
+        .margin
           .text-box
             .left Current Address
             .center :
             .right
-              textarea(name='cur_address' class = 'input' onchange = "addressValidate(event)")
+              textarea(id = 'currentAddress' name='cur_address' class = 'input' onchange = "addressValidate(event)")
         .margin
           .left City
           .center :
