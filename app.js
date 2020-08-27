@@ -25,11 +25,9 @@ const JoinUsSchema = new mongoose.Schema({
     cur_state: String,
     blood_group: String,
     category: String,
-    cause: String,
-    },
-    {
-        timestamps: true
-    });
+    cause: String
+
+  });
 
 const Volunteer = mongoose.model('Volunteer', JoinUsSchema);
 
@@ -104,7 +102,6 @@ app.get('/independence', (req, res)=>{
 
 
 //for volunteers form 
-
 app.post('/joinus', (req, res)=>{
 
     var myData=new Volunteer(req.body);
@@ -113,6 +110,7 @@ app.post('/joinus', (req, res)=>{
     }).catch(()=>{
         res.status(400).send("Unable to submit form please try again")
     });
+
 })
 
 //for doners form
