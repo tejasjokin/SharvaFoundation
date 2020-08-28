@@ -412,4 +412,3 @@ function thanks() {
  onload=function activateContactus(){
 	 joinus.className="active";
  }
- 

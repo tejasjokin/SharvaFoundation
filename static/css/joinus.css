@@ -5,6 +5,11 @@
 
     font-family: 'Lato', sans-serif;
 }
+#date{
+    height: .1px;
+    width: .1px;
+    visibility: hidden;
+}
 
 .but
 {
@@ -29,11 +34,12 @@
 .thanks{
     display: none;
     position: absolute;
-    top: 200px;
+    background: white url('../static/images/logo.png') no-repeat center;
+    background-size: 200px 200px;
+    top: 750px;
     left: 26%;
     width: 700px;
     height: 200px;
-    background-color: white;
     box-shadow: -2px 2px 15px #000000c9;
 }
 .bold{
@@ -62,8 +68,6 @@
 .show
 {
     display: block;
-    background: white url('../static/images/logo.png') no-repeat center;
-    background-size: 200px 200px;
 
 }
 

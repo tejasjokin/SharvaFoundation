@@ -13,6 +13,7 @@ const port = 80;
 //mongoose schema
 
 const JoinUsSchema = new mongoose.Schema({
+    date:String,
     name: String,
     DOB: String,
     email: String,
