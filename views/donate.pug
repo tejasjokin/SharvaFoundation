@@ -900,6 +900,11 @@ block content
           .center :
           .right
             input(type='text' name='pincode' class = 'input' onchange = "pincodeValidate(event)" placeholder='Enter your PIN Code')
+        .margin
+          .left  Donation Amount
+          .center :
+          .right
+            input(type='number' name='donated' class = 'input' onchange = "donationValidate(event)" placeholder='0.00')
         .margin.btns
           input(type="button", class = 'submit-btn' ,id = 'confirm' , onclick = "submitValidate()" value="Confirm Details") 
           button( type="submit" ,class = 'submit-btn submit' , id = 'submit') Proceed to Pay

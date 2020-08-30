@@ -286,26 +286,26 @@ border-radius: 9px;
     animation: slidingbg 80s linear infinite 0s;
     animation-timing-function: ease-in-out;
     background-color: rgba(0, 0, 0, .5);
-    background-image: url('/static/images/slider_1.jpg');
+    background-image: url('/static/images/slider_1.jpeg');
     background-blend-mode: darken;
 
 }
 
 @keyframes slidingbg{
     0% {
-        background-image:url('/static/images/slider_1.jpg');
+        background-image:url('/static/images/slider_1.jpeg');
     }
     25% {
-        background-image:url('/static/images/slider_2.jpg');
+        background-image:url('/static/images/slider_2.jpeg');
     }
     50% {
-        background-image:url('/static/images/slider_3.jpg');
+        background-image:url('/static/images/slider_3.JPG');
     }
     75% {
-        background-image:url('/static/images/slider_4.jpg');
+        background-image:url('/static/images/slider_4.JPG');
     }
     100% {
-        background-image:url('/static/images/slider_1.jpg');
+        background-image:url('/static/images/slider_1.jpeg');
     }
  
 }
@@ -375,6 +375,9 @@ border-radius: 9px;
     font-size: 44px;
     margin-right: 31px;
 }
+#counter .fa-tint{
+    margin-right: 0px;
+}
 .box2{
     display: flex;
     justify-content: center;
@@ -428,6 +431,7 @@ color: white;
     width: 30%;
     height: 196px;
     border-radius: 14px;
+    text-decoration: none;
     padding: 50px 2px;
     transition:0.5s;
 }
@@ -450,6 +454,7 @@ color: white;
     background:rgba(255, 255, 255, 0.7) url('../static/images/food.jpg') no-repeat center center/cover;
     /* border: 2px solid black; */
     background-blend-mode: darken;
+    text-decoration: none;
     width: 30%;
     height: 196px;
     border-radius: 14px;
@@ -462,29 +467,30 @@ color: white;
     background-blend-mode: darken;
     width: 30%;
     height: 196px;
+    text-decoration: none;
     border-radius: 14px;
     padding: 50px 2px;
     transition:0.5s;
 }
-.card1 a{
+.card1 h1{
     text-decoration: none;
     color: black;
 }
-.card2 a{
+.card2 h1{
     text-decoration: none;
     color: black;
 }
-.card3 a{
+.card3 h1{
     text-decoration: none;
     color: black;
 }
-.card1 a:hover{
+.card1 h1:hover{
     color: #e88f0a;
 }
-.card2 a:hover{
+.card2 h1:hover{
     color: #e88f0a;
 }
-.card3 a:hover{
+.card3 h1:hover{
     color: #e88f0a;
 }
 

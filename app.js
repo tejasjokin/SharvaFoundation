@@ -4,16 +4,16 @@ const path = require("path");
 const app = express();
 
 const mongoose = require('mongoose');
-const bodyparser=require("body-parser");
-mongoose.connect('mongodb://localhost/SharvaFoundation', {useNewUrlParser: true,useUnifiedTopology: true}); //name of data base
+const bodyparser = require("body-parser");
+mongoose.connect('mongodb://localhost/SharvaFoundation', { useNewUrlParser: true, useUnifiedTopology: true }); //name of data base
 
- 
-const port = 80;
 
-//mongoose schema
+const port = 8000;
+
+//##################### mongoose schema's #####################
 
 const JoinUsSchema = new mongoose.Schema({
-    date:String,
+    date: String,
     name: String,
     DOB: String,
     email: String,
@@ -28,7 +28,7 @@ const JoinUsSchema = new mongoose.Schema({
     category: String,
     cause: String
 
-  });
+});
 
 const Volunteer = mongoose.model('Volunteer', JoinUsSchema);
 
@@ -42,8 +42,9 @@ const DonateSchema = new mongoose.Schema({
     city: String,
     state: String,
     country: String,
-    pincode: String
-  });
+    pincode: String,
+    donated: String
+});
 
 const Donate = mongoose.model('Donate', DonateSchema);
 
@@ -51,7 +52,7 @@ const ContactSchema = new mongoose.Schema({
     name: String,
     email: String,
     textmessage: String,
-  });
+});
 
 const Contact = mongoose.model('Contact', ContactSchema);
 
@@ -65,91 +66,122 @@ app.use(express.urlencoded())
 // PUG SPECIFIC STUFF
 app.set('view engine', 'pug') // Set the template engine as pug
 app.set('views', path.join(__dirname, 'views')) // Set the views directory
- 
+
 // ENDPOINTS
-app.get('/', (req, res)=>{
-    
+
+// ########## Home #######################
+
+app.get('/', (req, res) => {
+
     const params = {}
     res.status(200).render('home.pug', params);
 })
-app.get('/payment', (req, res)=>{
-    
+
+//-----------------------------------------------pages-----------------------------------
+//############### COVID-19 ###############
+
+app.get('/covid', (req, res) => {
+
     const params = {}
-    res.status(200).render('payment.pug', params);
-})
-app.get('/donate', (req, res)=>{
-    
-    const params = {}
-    res.status(200).render('donate.pug', params);
-})
-app.get('/joinus', (req, res)=>{
-    
-    const params = {}
-    res.status(200).render('joinus.pug', params);
-})
-app.get('/contact', (req, res)=>{
-    
-    const params = {}
-    res.status(200).render('contact.pug', params);
+    res.status(200).render('covid.pug', params);
 })
 
-app.get('/independence', (req, res)=>{
-    
+app.get('/independence', (req, res) => {
+
     const params = {}
     res.status(200).render('independence.pug', params);
 })
 
+app.get('/chocolate', (req, res) => {
+
+    const params = {}
+    res.status(200).render('chocolate.pug', params);
+})
+
+
+//############## Blood Donation ############################
+
+app.get('/blooddonation', (req, res) => {
+
+    const params = {}
+    res.status(200).render('blooddonation.pug', params);
+})
+
+//############## project Green ###############################
+
+app.get('/projectgreen', (req, res) => {
+
+    const params = {}
+    res.status(200).render('projectgreen.pug', params);
+})
 
 
 
-//for volunteers form 
-app.post('/joinus', (req, res)=>{
 
-    var myData=new Volunteer(req.body);
-    myData.save().then(()=>{
-        res.redirect(301,'/joinus');
-    }).catch(()=>{
+//################# for volunteers form #####################
+
+app.get('/joinus', (req, res) => {
+
+    const params = {}
+    res.status(200).render('joinus.pug', params);
+})
+
+
+app.post('/joinus', (req, res) => {
+
+    var myData = new Volunteer(req.body);
+    myData.save().then(() => {
+        res.redirect(301, '/joinus');
+    }).catch(() => {
         res.status(400).send("Unable to submit form please try again")
     });
 
 })
 
-//for doners form
-app.post('/donate', (req, res)=>{
 
-    var myData=new Donate(req.body);
-    myData.save().then(()=>{
-        res.render( 'payment.pug');
-    }).catch(()=>{
-        res.status(404).send("Unable to submit form please try again")
-    });
-
-})
-
-
-//for contact form
-app.post('/contact', (req, res)=>{
-    var myData=new Contact(req.body);
-    myData.save().then(()=>{
-        res.redirect( 301,'/contact');
-    }).catch(()=>{
+//################ for contact form ####################
+app.post('/contact', (req, res) => {
+    var myData = new Contact(req.body);
+    myData.save().then(() => {
+        res.redirect(301, '/contact');
+    }).catch(() => {
         res.status(404).send("Unable to submit form please try again")
     });
 })
 
 
+app.get('/contact', (req, res) => {
 
-
-
-
-app.get('/covid', (req, res)=>{
-    
     const params = {}
-    res.status(200).render('covid.pug', params);
+    res.status(200).render('contact.pug', params);
 })
 
+//############### for doners form #######################
+app.post('/donate', (req, res) => {
+
+    var myData = new Donate(req.body);
+    myData.save().then(() => {
+        res.render('payment.pug');
+    }).catch(() => {
+        res.status(404).send("Unable to submit form please try again")
+    });
+
+})
+
+
+app.get('/donate', (req, res) => {
+
+    const params = {}
+    res.status(200).render('donate.pug', params);
+})
+
+app.get('/payment', (req, res) => {
+
+    const params = {}
+    res.status(200).render('payment.pug', params);
+})
 
 // START THE SERVER
-app.listen(port, ()=>{
+app.listen(port, () => {
     console.log(`The application started successfully on port ${port}`);
 });
