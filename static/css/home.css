@@ -376,7 +376,10 @@ border-radius: 9px;
     margin-right: 31px;
 }
 #counter .fa-tint{
-    margin-right: 0px;
+    margin-right: 7px;
+}
+#counter .fa-pagelines{
+    margin-right: 10px;
 }
 .box2{
     display: flex;
@@ -425,7 +428,7 @@ color: white;
 }
 
 .card1{
-    background:rgba(0, 0, 0, 0.4) url('../static/images/education.jpg') no-repeat center center/cover;
+    background:rgba(255,255, 255, 0.4) url('../static/images/covid.jpg') no-repeat center center/cover;
     /* border: 2px solid black; */
     background-blend-mode: darken;
     width: 30%;
@@ -451,7 +454,7 @@ color: white;
     box-shadow: 0 25px 40px rgba(0, 0, 0, .5);
 }
 .card2{
-    background:rgba(255, 255, 255, 0.7) url('../static/images/food.jpg') no-repeat center center/cover;
+    background:rgba(0, 0, 0, 0.4) url('../static/images/blooddonation.jpg') no-repeat center center/cover;
     /* border: 2px solid black; */
     background-blend-mode: darken;
     text-decoration: none;
@@ -462,7 +465,7 @@ color: white;
     transition:0.5s;
 }
 .card3{
-    background:rgba(0, 0, 0, 0.4) url('../static/images/health.jpg') no-repeat center center/cover;
+    background:rgba(0, 0, 0, 0.4) url('../static/images/projectgreen.jpg') no-repeat center center/cover;
     /* border: 2px solid black; */
     background-blend-mode: darken;
     width: 30%;

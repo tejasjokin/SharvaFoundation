@@ -37,7 +37,7 @@
  
 }
 
-.greencontent{
+.bloodcontent{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,9 +47,17 @@
 
 }
 
-.greencontent h1{
+.bloodcontent h1{
     font-size: 2.6rem;
 }
-.greencontent div{
+.bloodcontent div{
     font-size: 1.3rem;
+}
+
+
+
+@media only screen and (max-width:850px){
+    .bloodcontent{
+        margin:10px 20px;
+    }
 }
