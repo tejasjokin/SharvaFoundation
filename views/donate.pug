@@ -904,7 +904,9 @@ block content
           .left  Donation Amount
           .center :
           .right
-            input(type='number' name='donated' class = 'input' onchange = "donationValidate(event)" placeholder='0.00')
+            input(type='number' name='donated' step = '5' onkeypress="return event.charCode >= 48 && event.charCode <= 57" class = 'input' onkeydown="if(event.key==='.'){event.preventDefault();}" oninput="event.target.value = event.target.value.replace(/[^0-9]*/g,'');"
+            onchange = "donationValidate(event)" 
+            placeholder='00')
         .margin.btns
           input(type="button", class = 'submit-btn' ,id = 'confirm' , onclick = "submitValidate()" value="Confirm Details") 
           button( type="submit" ,class = 'submit-btn submit' , id = 'submit') Proceed to Pay

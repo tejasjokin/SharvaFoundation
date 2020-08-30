@@ -6,6 +6,7 @@ var cityFlag = false;
 var stateFlag = false;
 var countryFlag = false;
 var pincodeFlag = false;
+var amountFlag = false;
 
 const input = document.getElementsByClassName('input');
 const input1 = Object.entries(input);
@@ -69,6 +70,18 @@ const addressValidate = (event) => {
 	else
 	{
 		addressFlag = true;
+	}
+}
+
+const donationValidate = (event) => {
+	var amount = event.target.value;
+	if(amount === '')
+	{
+		amountFlag = false;
+	}
+	else
+	{
+		amountFlag = true;
 	}
 }
 
@@ -194,6 +207,10 @@ const submitValidate = () => {
 	{
 		alert("Pincode is unattended.");
 	}
+	else if(!amountFlag)
+	{
+		alert("Donation amount not specified.");
+	}
 	if(
 		nameFlag===true &&
 		mailFlag===true &&
@@ -203,6 +220,7 @@ const submitValidate = () => {
 		stateFlag===true &&
 		countryFlag===true &&
 		pincodeFlag===true &&
+		amountFlag===true &&
 		window.confirm('Are you sure you want to confirm details?')===true
 	)
 	{
