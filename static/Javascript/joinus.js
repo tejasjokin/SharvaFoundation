@@ -385,12 +385,11 @@ const submitValidate = () => {
 		cur_cityFlag===true &&
 		cur_addressFlag===true &&
 		cur_stateFlag===true &&
-		categoryFlag===true &&
-		window.confirm('Are you sure you want to confirm?')===true
+		categoryFlag===true
 	)
 	{
 		submit.classList.remove("submit");
-		confirm.classList.add('hide');
+		confirm.disabled = true;
 		lock();
 		cityLock();
 		bloodLock();

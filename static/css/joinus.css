@@ -144,7 +144,7 @@
         margin-left: 198px;
         /* margin-top: 20px; */
         height: 36px;
-        width: 100px;
+        width: 159px;
         border-radius: 4px;
         cursor: pointer;
         outline: none;
@@ -227,7 +227,16 @@
     display: block;
 }
 
-.hide
+.submit-btn:disabled
 {
-    display: none;
+    font-size: 1.4rem;
+    margin-left: 198px;
+    /* margin-top: 20px; */
+    height: 36px;
+    width: 159px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid grey;
+    background-color: #dddddd;
 }
