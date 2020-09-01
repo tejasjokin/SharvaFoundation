@@ -98,7 +98,7 @@ body,
 }
 
 .slide {
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -199,3 +199,32 @@ border-color:transparent #e88f0a transparent transparent;
   
     height: 60%;
 }}
+
+
+@media only screen and (max-width: 750px)
+{
+  .slide{
+  
+    background-size:100% 60%;
+}
+#arrow-right{
+  border-width: 15px 0 15px 20px;
+}
+#arrow-left{
+  border-width: 15px 20px 15px 0;
+}
+#cross {
+  top: 140px;
+  right: 6px;}
+}
+@media only screen and (max-width: 500px)
+{
+  .slide{
+  
+    background-size:100% 40%;
+}
+#cross {
+  top: 230px;
+  right: -10px;
+font-size: 1.2rem;}
+}

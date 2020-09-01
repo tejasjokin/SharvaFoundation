@@ -8,7 +8,7 @@ const bodyparser = require("body-parser");
 mongoose.connect('mongodb://localhost/SharvaFoundation', { useNewUrlParser: true, useUnifiedTopology: true }); //name of data base
 
 
-const port = 8000;
+const port = 80;
 
 //##################### mongoose schema's #####################
 

@@ -5,9 +5,9 @@
     justify-content: center;
     color: white;
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     background-position: center center;
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     backface-visibility: hidden;
     animation: slidingbg 80s linear infinite 0s;
@@ -37,7 +37,7 @@
  
 }
 
-.greencontent{
+.bloodcontent{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,9 +47,28 @@
 
 }
 
-.greencontent h1{
+.bloodcontent h1{
     font-size: 2.6rem;
 }
-.greencontent div{
+.bloodcontent div{
     font-size: 1.3rem;
+}
+
+
+
+@media only screen and (max-width:850px){
+    .bloodcontent{
+        margin:10px 20px;
+    }
+}
+@media only screen and (max-width:1000px){
+    .background_events {
+        height: 30vh;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .background_events {
+        height: 40vh;
+    }
 }
