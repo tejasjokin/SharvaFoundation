@@ -62,9 +62,9 @@ const numberValidate = (event) =>
 
 const addressValidate = (event) => {
 	var address = event.target.value;
-	if(address.length<50 || address.length>200)
+	if(address.length<10 || address.length>200)
 	{
-		alert("Address should contain 50-200 characters.");
+		alert("Address should contain 10-200 characters.");
 		addressFlag = false;
 	}
 	else

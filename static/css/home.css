@@ -280,7 +280,7 @@ border-radius: 9px;
 .background{
     width: 100%;
     background-position: center center;
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     backface-visibility: hidden;
     animation: slidingbg 80s linear infinite 0s;
@@ -311,7 +311,7 @@ border-radius: 9px;
 }
 
 .firstsection{
-    height: 100vh;
+    height: 92vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -419,7 +419,8 @@ border-radius: 9px;
     /* padding-top:25px ; */
 }
 #mission p   { 
-color: white;
+color: black;
+font-weight: bold;
 }
 #mission h1{
     
@@ -428,7 +429,7 @@ color: white;
 }
 
 .card1{
-    background:rgba(255,255, 255, 0.4) url('../static/images/covid.jpg') no-repeat center center/cover;
+    background:url('../static/images/covid.jpg') no-repeat center center/cover;
     /* border: 2px solid black; */
     background-blend-mode: darken;
     width: 30%;
@@ -454,7 +455,7 @@ color: white;
     box-shadow: 0 25px 40px rgba(0, 0, 0, .5);
 }
 .card2{
-    background:rgba(0, 0, 0, 0.4) url('../static/images/blooddonation.jpg') no-repeat center center/cover;
+    background:url('../static/images/blooddonation.jpg') no-repeat center center/cover;
     /* border: 2px solid black; */
     background-blend-mode: darken;
     text-decoration: none;
@@ -465,7 +466,7 @@ color: white;
     transition:0.5s;
 }
 .card3{
-    background:rgba(0, 0, 0, 0.4) url('../static/images/projectgreen.jpg') no-repeat center center/cover;
+    background: url('../static/images/projectgreen.jpg') no-repeat center center/cover;
     /* border: 2px solid black; */
     background-blend-mode: darken;
     width: 30%;
@@ -706,4 +707,16 @@ color: white;
     background-color: rgb(0, 0, 0);
     height: 4px;
     margin: 5px 3px;
+}
+
+@media only screen and (max-width:1000px){
+    .firstsection{
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .firstsection{
+        height: 50vh;
+    }
 }

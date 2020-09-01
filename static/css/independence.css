@@ -98,37 +98,34 @@ body,
 }
 
 .slide {
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .slide1 {
-  background-image: url("/static/images/covid/independence/1.jepg");
+  background-image: url("/static/images/covid/independence/1.jpeg");
 }
 .slide2 {
-  background-image: url("/static/images/covid/independence/2.jepg");
+  background-image: url("/static/images/covid/independence/2.jpeg");
 }
 .slide3 {
-  background-image: url("/static/images/covid/independence/3.jepg");
+  background-image: url("/static/images/covid/independence/3.jpeg");
 }
 .slide4 {
-  background-image: url("/static/images/covid/independence/4.jepg");
+  background-image: url("/static/images/covid/independence/4.jpeg");
 }
 .slide5 {
   background-image: url("/static/images/covid/independence/5.jpg");
 }
 .slide6 {
-  background-image: url("/static/images/covid/independence/6.jepg");
+  background-image: url("/static/images/covid/independence/6.jpeg");
 }
 .slide7 {
-  background-image: url("/static/images/covid/independence/7.jepg");
+  background-image: url("/static/images/covid/independence/7.jpeg");
 }
 .slide8 {
-  background-image: url("/static/images/covid/independence/8.jepg");
-}
-.slide9 {
-  background-image: url("/static/images/covid/independence/9.jepg");
+  background-image: url("/static/images/covid/independence/8.jpeg");
 }
 
 .slide-content {
@@ -196,3 +193,32 @@ border-color:transparent #e88f0a transparent transparent;
   
     height: 60%;
 }}
+@media only screen and (max-width: 750px)
+{
+  .slide{
+  
+    background-size:100% 60%;
+}
+#arrow-right{
+  border-width: 15px 0 15px 20px;
+}
+#arrow-left{
+  border-width: 15px 20px 15px 0;
+}
+#cross {
+  top: 140px;
+  right: 6px;
+}
+}
+@media only screen and (max-width: 500px)
+{
+  .slide{
+  
+    background-size:100% 40%;
+}
+#cross {
+  top: 230px;
+  right: -10px;
+font-size: 1.2rem;
+}
+}
