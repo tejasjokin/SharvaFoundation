@@ -140,7 +140,7 @@
 
 
 .submit-btn {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         margin-left: 198px;
         /* margin-top: 20px; */
         height: 36px;
@@ -229,7 +229,7 @@
 
 .submit-btn:disabled
 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-left: 198px;
     /* margin-top: 20px; */
     height: 36px;
