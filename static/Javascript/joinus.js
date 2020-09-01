@@ -93,22 +93,6 @@ const mailValidate = (event) => {
     }
 }
 
-const numberValidate = (event) =>
-{
-	var phoneno = /^\d{10}$/;
-	const number = event.target.value;
-	if(!number.match(phoneno))
-	{
-		alert("Enter valid phone no.");
-		event.target.value = '';
-		numberFlag = false;
-	}
-	else
-	{
-		numberFlag = true;
-	}
-}
-
 const addressValidate = (event) => {
 	var target = event.target.name;
 	if(target==='per_address')
@@ -142,6 +126,7 @@ const addressValidate = (event) => {
 
 const blood = document.getElementById('bloodgroup');
 const state = document.getElementById('state');
+const phone_no = document.getElementById('phone_no');
 const cur_state = document.getElementById('cur_state');
 const city = document.getElementById('city');
 const cur_city = document.getElementById('cur_city');
@@ -242,6 +227,21 @@ city.addEventListener('blur', (event) => {
 	else
 	{
 		cityFlag = true;
+	}
+})
+
+phone_no.addEventListener('blur', (event) => {
+	// var phoneno = /^\d{10}$/;
+	const number = event.target.value;
+	if(number.length)
+	{
+		numberFlag = true;
+	}
+	else
+	{
+		alert("Enter valid phone no.");
+		event.target.value = '';
+		numberFlag = false;	
 	}
 })
 

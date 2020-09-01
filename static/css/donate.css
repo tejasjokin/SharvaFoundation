@@ -105,6 +105,20 @@
     background-color: #e88f0a;
     font-weight: bold;
 }
+
+.submit-btn:disabled {
+        font-size: 1rem;
+        margin-left: 198px;
+        margin-top: 20px;
+        height: 36px;
+        width: 120px;
+        border-radius: 4px;
+        cursor: pointer;
+        outline: none;
+        border: 2px solid gray;
+        background-color: #dddddd;
+    }
+
 .submit-btn a{
     text-decoration: none;
     color: black;

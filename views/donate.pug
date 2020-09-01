@@ -23,7 +23,12 @@ block content
           .left Phone Number
           .center :
           .right
-            input(type='phone' class = 'input' onblur = "numberValidate(event)" name='phone' placeholder='Enter your Contact number')
+            input(type='phone' 
+            class = 'input' 
+            name='phone' 
+            oninput="event.target.value = event.target.value.replace(/[^0-9]*/g,'');"
+            placeholder='Enter your Contact number' 
+            id = "phone_no")
         .margin
           .text-box
             .left  Address

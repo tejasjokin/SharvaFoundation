@@ -44,22 +44,6 @@ const mailValidate = (event) => {
     }
 }
 
-const numberValidate = (event) =>
-{
-	var phoneno = /^\d{10}$/;
-	const number = event.target.value;
-	if(!number.match(phoneno))
-	{
-		alert("Enter valid phone no.");
-		event.target.value = '';
-		numberFlag = false;
-	}
-	else
-	{
-		numberFlag = true;
-	}
-}
-
 const addressValidate = (event) => {
 	var address = event.target.value;
 	if(address.length<10 || address.length>200)
@@ -102,6 +86,7 @@ const pincodeValidate = (event) => {
 const city = document.getElementById('city');
 const state = document.getElementById('state');
 const country = document.getElementById('country');
+const phone_no = document.getElementById('phone_no');
 const form = document.getElementById('form');
 const confirm = document.getElementById('confirm');
 const submit = document.getElementById('submit');
@@ -151,6 +136,22 @@ city.addEventListener('blur', (event) => {
 	}
 })
 
+phone_no.addEventListener('blur', () => {
+	// var phoneno = /^\d{10}$/;
+	const number = event.target.value;
+	if(number.length)
+	{
+		
+		numberFlag = true;
+	}
+	else
+	{
+		alert("Enter valid phone no.");
+		event.target.value = '';
+		numberFlag = false;
+	}
+})
+
 state.addEventListener('blur', (event) => {
 	if(event.target.value==='none')
 	{
@@ -162,6 +163,7 @@ state.addEventListener('blur', (event) => {
 		stateFlag = true;
 	}	
 })
+
 country.addEventListener('blur', (event) => {
 	if(event.target.value==='none')
 	{
@@ -220,12 +222,11 @@ const submitValidate = () => {
 		stateFlag===true &&
 		countryFlag===true &&
 		pincodeFlag===true &&
-		amountFlag===true &&
-		window.confirm('Are you sure you want to confirm details?')===true
+		amountFlag===true
 	)
 	{
 		submit.classList.remove('submit');
-		confirm.classList.add('hide');
+		confirm.disabled = true;
 		lock();
 		cityLock();
 		stateLock();
