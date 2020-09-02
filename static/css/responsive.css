@@ -166,6 +166,9 @@
     margin: 2px;
 
 }
+#goal .buttons{
+    flex-direction: column;
+}
 }
 
 @media only screen and (max-width:750px){

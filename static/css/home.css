@@ -50,12 +50,12 @@
     color: white;
   }
   
-.fa-google {
+.fa-envelope-o {
     /* background: #dd4b39; */
     color: white;
   }
   
-.fa-google:hover{
+.fa-envelope-o:hover{
   background: #dd4b39;
     color: white;
   }
@@ -404,16 +404,107 @@ border-radius: 9px;
     /* margin-right: 25px; */
     background-color: #efbc70;
 }
+#counter p{
+    text-align: center;
+}
+/* ----------------------- Our goals ------------------------------------ */
+
+#goal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#goal .head{
+    font-size: 2.2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #323232;
+    border-bottom: 2px solid #e88f0a;
+}
+
+#goal .text{
+    text-align: center;
+    width: 50%;
+    font-size: 1.2rem;
+}
+.bar{
+    display: flex;
+    width: 50%;
+    background-color: rgba(0,0,0,.07);
+    margin: 30px 0;
+
+}
+.filled{
+    background: #e88f0a;
+    height: 24px;
+    width: 5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 6px;
+}
+.remaining{
+    /* background-color: rgba(0,0,0,.07); */
+    height: 24px;
+    width: 95%;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 6px;
+
+}
+#goal .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#goal .donate, #goal .volunteer {
+    border: 1px solid #e1a448;
+    height: 50px;
+    width: 250px;
+    background: none;
+    margin: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#goal .donate:hover, #goal .volunteer:hover {
+    background:#e88f0a;
+}
 
 
-
+#goal .donate a, #goal .volunteer a{
+    text-decoration: none;
+    color: #e88f0a;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#goal .donate a:hover, #goal .volunteer a:hover{
+    color: white;
+}
+#goal .donate a{
+    padding: 14px 34px;
+}
+#goal .volunteer a{
+    padding: 14px 17px;
+}
 /* -----------------------cards------------------------------------- */
 
 #mission{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 450px;
+    height: 372px;
     /* background-color: rgba(87, 69, 69, 0.781); */
     text-align: center;
     /* padding-top:25px ; */
