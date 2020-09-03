@@ -85,7 +85,7 @@
     justify-content: center;
     margin: 30px 0px 30px 432px;
     /* align-items: center; */
-    background: rgb(255 255 255 / 61%);
+    background: rgb(255 255 255 / 75%);
     font-size: 1.1rem;
 }
 .backgroundjoinus{
@@ -141,7 +141,7 @@
 
 .submit-btn {
         font-size: 1.2rem;
-        margin-left: 198px;
+        margin-left: 100px;
         /* margin-top: 20px; */
         height: 36px;
         width: 159px;
@@ -230,7 +230,7 @@
 .submit-btn:disabled
 {
     font-size: 1.2rem;
-    margin-left: 198px;
+    /* margin-left: 198px; */
     /* margin-top: 20px; */
     height: 36px;
     width: 159px;

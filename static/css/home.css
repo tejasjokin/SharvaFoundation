@@ -440,7 +440,7 @@ border-radius: 9px;
 .filled{
     background: #e88f0a;
     height: 24px;
-    width: 5%;
+    width: 50%;
     color: white;
     display: flex;
     align-items: center;
@@ -452,11 +452,11 @@ border-radius: 9px;
 .remaining{
     /* background-color: rgba(0,0,0,.07); */
     height: 24px;
-    width: 95%;
+    width: 50%;
     color: gray;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     font-size: 0.9rem;
     font-weight: bold;
     border-radius: 6px;
@@ -810,4 +810,9 @@ font-weight: bold;
     .firstsection{
         height: 50vh;
     }
+}
+@media only screen and (max-width:700px){
+#goal .bar{
+width:90%;
+}
 }
