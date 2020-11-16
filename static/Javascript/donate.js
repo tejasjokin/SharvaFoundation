@@ -18,9 +18,9 @@ const lock = () => {
 
 const nameValidate = (event) => {
 	const name  = event.target.value;
-	if(name.length<5 || name.length>15)
+	if(name.length<5 || name.length>22)
 	{
-		alert("The name should contain 5-15 characters");
+		alert("The name should contain 5-22 characters");
 		event.target.value = '';
 		nameFlag = false;
 	}

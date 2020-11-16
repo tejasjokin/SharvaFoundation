@@ -59,7 +59,6 @@
 .part-2{
 
     width: 35%;
-    height: 260px;
 
 }
 .part-2 h2{
@@ -113,6 +112,63 @@
     width: 90px;
     height: 30px;
 }
+/* =======================map============================== */
+.map_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+.about_branch{
+    margin-top: 30px;
+    width: 50%;
+}
+.map{
+    position: relative;
+    background: url('/static/images/map.jpeg') no-repeat center center;
+    background-size: cover;
+    background-size: 96% 100%;
+    width: 50%;
+    height: 500px;
+    z-index: -1;
+}
+.map span{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    top: 61%;
+    left: 24%;
+    background-color: #e88f0a;
+}
+.map .marker2{
+    left: 28%;
+    top: 15%;
+}
+.map .marker3{
+    left: 29%;
+    top: 32%;
+}
+.map .marker4{
+    left: 33%;
+    top: 34%;
+}
+.map .marker5{
+    left: 39%;
+    top: 36%;
+}
+
+.font{
+    font-size: 2rem;
+}
+
+.about_branch{
+    display: flex;
+    flex-direction: column;
+}
+.maharashtra,.haryana,.newdelhi,.uttarpradesh{
+    margin: 10px;
+}
 @media only screen and (max-width:860px){
     .part-1{
         width: 40%;
@@ -127,13 +183,23 @@
         flex-direction: column;
         height: 100%;
     }
-
-
+    .map_container{
+        flex-direction: column;
+    }
+    .map,.about_branch{
+        width: 100%;
+    }
     .part-1{
         width: 100%;
         box-shadow: none;
     }
-
+    .map span{
+        width: 10px;
+        height: 10px;
+    } 
+    .map{
+        height: 350px;
+    }
 }
 @media only screen and (max-width:550px){
 .part-2{
@@ -150,9 +216,5 @@
 @media only screen and (max-width:250px){
     .call,.mail,.address{
         flex-direction: column;
-    }
-
-    .part-2{
-        height: 100%;
-    }
+    }  
 }
