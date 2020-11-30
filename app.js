@@ -87,34 +87,11 @@ app.get('/covid', (req, res) => {
     res.status(200).render('covid.pug', params);
 })
 
-app.get('/independence', (req, res) => {
+app.get('/food', (req, res) => {
 
     const params = {}
-    res.status(200).render('independence.pug', params);
+    res.status(200).render('food.pug', params);
 })
-
-app.get('/chocolate', (req, res) => {
-
-    const params = {}
-    res.status(200).render('chocolate.pug', params);
-})
-app.get('/nutrition', (req, res) => {
-
-    const params = {}
-    res.status(200).render('nutrition.pug', params);
-})
-app.get('/blanket', (req, res) => {
-
-    const params = {}
-    res.status(200).render('blanket.pug', params);
-})
-
-app.get('/foodkit', (req, res) => {
-
-    const params = {}
-    res.status(200).render('foodkit.pug', params);
-})
-
 
 //############## Blood Donation ############################
 

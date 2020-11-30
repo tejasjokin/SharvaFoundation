@@ -1,0 +1,47 @@
+extends base.pug
+block style
+    style
+      include ../static/css/home.css
+      include ../static/css/responsive.css
+      include ../static/css/events.css
+      include ../static/css/food.css
+block content
+    .section
+     h1.w3-center DIWALI ROADSIDE DISTRIBUTION - JAMMU
+     p
+       | As our Diwali run continued we finally finished it at last and as profusely as we can. On the day of Diwali we were able to share some home made kindness. Sharva Foundation donated 110 people with homemade cooked food, fruits and Diwali sweets. We distributed it among people residing in Trikuta Nagar, Gandhinagar, Channi Himmat, and Gole Market area. We are joyous to share some home love with people besides our family. We look forward to help more and more people and share as much happiness as we can.
+     .carousel(data-flickity='{ "groupCells": true, "autoPlay":4000 }')
+       .carousel-cell.event2-1
+       .carousel-cell.event2-2
+       .carousel-cell.event2-3
+       .carousel-cell.event2-4
+       .carousel-cell.event2-5
+       .carousel-cell.event2-6
+       .carousel-cell.event2-7
+       .carousel-cell.event2-8
+       .carousel-cell.event2-9
+    .section
+     h1.w3-center TRIBUTE TO ATHARV MULEY
+     p
+       | 2nd Oct 2020, what a remarkable day! Sharva Foundation had conquered yet another milestone! This event was a
+       | tribute to Atharva Muley, founding member of SHARVA Foundation, a dear friend and an insightful human being. A
+       | total of 50 food kits were distributed among people staying at labor camp near ARV Newtown situated in Pisoli,
+       | Pune.We were overwhelmed to see the numerous donations from our volunteers. Another volunteer, MS Shilpa, who was
+       | celebrating her birthday, decided to share her happiness with the kids with delicious cakes. Packets of laddoos
+       | were also given out which we are sure made their day.
+     .carousel(data-flickity='{ "groupCells": true, "autoPlay":3800 }')
+       .carousel-cell.event1-1
+       .carousel-cell.event1-2
+       .carousel-cell.event1-3
+       .carousel-cell.event1-4
+       .carousel-cell.event1-5
+       .carousel-cell.event1-6
+       .carousel-cell.event1-7
+       .carousel-cell.event1-8
+       .carousel-cell.event1-9
+block scripts
+  script
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+    script(src='https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js')
+    script(src='../static/Javascript/activateEvents.js')
+    script(src='../static/Javascript/hamburger.js')

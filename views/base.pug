@@ -5,6 +5,7 @@ head
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
   link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
   link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  link(rel='stylesheet' href='https://unpkg.com/flickity@2/dist/flickity.min.css')
   block style
     style
         include ../static/css/home.css
@@ -22,6 +23,8 @@ head
             ul
               li
                 a(href='/covid') Covid-19
+              li
+                a(href='/food') Food
               li  
                 a(href='/blooddonation') Blood Donation
               li
@@ -49,11 +52,11 @@ head
         .recent
           h2 Recent Events
           p
-           a(href="/foodkit") Food Kit Distribution
+           a(href="/covid") Chips Distribution - Pune
           p
-            a(href="/blanket") Blanket Distribution
+            a(href="/covid") Blanket Distribution - Jammu
           p
-            a(href="/nutrition") Nutrition Week
+            a(href="/food") Diwali Distribution - Jammu
         //- .address
         //-   p
         //-     | Address

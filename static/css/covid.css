@@ -1,88 +1,223 @@
 
-
-.background_events{
-    width: 100%;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    backface-visibility: hidden;
-    animation: slidingbg 80s linear infinite 0s;
-    animation-timing-function: ease-in-out;
-    background-color: rgba(0,0,0,.5);
-    background-image: url('/static/images/slider_1.jpg');
-    background-blend-mode: darken;
-
+.event1-1 {
+    background: url(/static/images/covid/independence/cover.jpeg) no-repeat center center/cover;
+}
+.event1-2 {
+    background: url(/static/images/covid/independence/1.jpeg) no-repeat center center/cover;
+}
+.event1-3 {
+    background: url(/static/images/covid/independence/2.jpeg) no-repeat center center/cover;
+}
+.event1-4 {
+    background: url(/static/images/covid/independence/3.jpeg) no-repeat center center/cover;
+}
+.event1-5 {
+    background: url(/static/images/covid/independence/4.jpeg) no-repeat center center/cover;
+}
+.event1-6 {
+    background: url(/static/images/covid/independence/5.jpg) no-repeat center center/cover;
+}
+.event1-7 {
+    background: url(/static/images/covid/independence/6.jpeg) no-repeat center center/cover;
+}
+.event1-8 {
+    background: url(/static/images/covid/independence/7.jpeg) no-repeat center center/cover;
+}
+.event1-9 {
+    background: url(/static/images/covid/independence/8.jpeg) no-repeat center center/cover;
 }
 
-@keyframes slidingbg{
-    0% {
-        background-image:url('/static/images/slider_1.jpg');
-    }
-    25% {
-        background-image:url('/static/images/slider_2.jpg');
-    }
-    50% {
-        background-image:url('/static/images/slider_3.jpg');
-    }
-    75% {
-        background-image:url('/static/images/slider_4.jpg');
-    }
-    100% {
-        background-image:url('/static/images/slider_1.jpg');
-    }
- 
+
+.event2-1 {
+    background: url(/static/images/covid/chocolate/cover.jpeg) no-repeat center center/cover;
 }
-.section_1{
-    height: 40vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
+.event2-2 {
+    background: url(/static/images/covid/chocolate/1.jpeg) no-repeat center center/cover;
+}
+.event2-3 {
+    background: url(/static/images/covid/chocolate/2.jpeg) no-repeat center center/cover;
+}
+.event2-4 {
+    background: url(/static/images/covid/chocolate/3.jpeg) no-repeat center center/cover;
+}
+.event2-5 {
+    background: url(/static/images/covid/chocolate/4.jpeg) no-repeat center center/cover;
+}
+.event2-6 {
+    background: url(/static/images/covid/chocolate/5.jpeg) no-repeat center center/cover;
+}
+.event2-7 {
+    background: url(/static/images/covid/chocolate/6.jpeg) no-repeat center center/cover;
+}
+.event2-8 {
+    background: url(/static/images/covid/chocolate/7.jpeg) no-repeat center center/cover;
+}
+.event2-9 {
+    background: url(/static/images/covid/chocolate/8.jpeg) no-repeat center center/cover;
 }
 
-.content{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 300px;
-}
-.text{
-    width: 48%;
-    margin-bottom:10px
-}
-.content img{
-    height: 200px;
-    width: 22%;
-    border-radius: 14px;
-}
-.content h1{
-    font-size: 2.1rem;
 
+.event3-1 {
+    background: url(/static/images/covid/nutrition/cover.jpeg) no-repeat center center/cover;
 }
-
-.content p a{
-    color: black;
-    text-decoration: none;
+.event3-2 {
+    background: url(/static/images/covid/nutrition/1.jpeg) no-repeat center center/cover;
 }
-
-.content p a:hover{
-    color: #e88f0a;
+.event3-3 {
+    background: url(/static/images/covid/nutrition/2.jpeg) no-repeat center center/cover;
 }
-
-@media only screen and (max-width:450px){
-    .content{
-        flex-direction: column;
-        height: 100%;
-    }
-    .content img{
-        width: 50%;
-        margin:10px 0;
-    }
+.event3-4 {
+    background: url(/static/images/covid/nutrition/3.jpeg) no-repeat center center/cover;
+}
+.event3-5 {
+    background: url(/static/images/covid/nutrition/4.jpeg) no-repeat center center/cover;
+}
+.event3-6 {
+    background: url(/static/images/covid/nutrition/5.jpeg) no-repeat center center/cover;
+}
+.event3-7 {
+    background: url(/static/images/covid/nutrition/6.jpeg) no-repeat center center/cover;
+}
+.event3-8 {
+    background: url(/static/images/covid/nutrition/7.jpeg) no-repeat center center/cover;
+}
+.event3-9 {
+    background: url(/static/images/covid/nutrition/8.jpeg) no-repeat center center/cover;
 }
 
-@media only screen and (max-width:940px){
-    .content img{
-        height:200px ;
-    }
+
+.event4-1 {
+    background: url(/static/images/covid/blanket_noi/cover.jpeg) no-repeat center center/cover;
+}
+.event4-2 {
+    background: url(/static/images/covid/blanket_noi/1.jpeg) no-repeat center center/cover;
+}
+.event4-3 {
+    background: url(/static/images/covid/blanket_noi/2.jpeg) no-repeat center center/cover;
+}
+.event4-4 {
+    background: url(/static/images/covid/blanket_noi/3.jpeg) no-repeat center center/cover;
+}
+.event4-5 {
+    background: url(/static/images/covid/blanket_noi/4.jpeg) no-repeat center center/cover;
+}
+.event4-6 {
+    background: url(/static/images/covid/blanket_noi/5.jpeg) no-repeat center center/cover;
+}
+.event4-7 {
+    background: url(/static/images/covid/blanket_noi/6.jpeg) no-repeat center center/cover;
+}
+.event4-8 {
+    background: url(/static/images/covid/blanket_noi/7.jpeg) no-repeat center center/cover;
+}
+.event4-9 {
+    background: url(/static/images/covid/blanket_noi/4.jpeg) no-repeat center center/cover;
+}
+
+
+.event5-1 {
+    background: url(/static/images/covid/diwali_rd_pune/1.jpeg) no-repeat center center/cover;
+}
+.event5-2 {
+    background: url(/static/images/covid/diwali_rd_pune/2.jpeg) no-repeat center center/cover;
+}
+.event5-3 {
+    background: url(/static/images/covid/diwali_rd_pune/3.jpeg) no-repeat center center/cover;
+}
+.event5-4 {
+    background: url(/static/images/covid/diwali_rd_pune/4.jpeg) no-repeat center center/cover;
+}
+.event5-5 {
+    background: url(/static/images/covid/diwali_rd_pune/5.jpeg) no-repeat center center/cover;
+}
+.event5-6 {
+    background: url(/static/images/covid/diwali_rd_pune/6.jpeg) no-repeat center center/cover;
+}
+
+
+.event6-1 {
+    background: url(/static/images/covid/childrens_day/1.jpeg) no-repeat center center/cover;
+}
+.event6-2 {
+    background: url(/static/images/covid/childrens_day/2.jpeg) no-repeat center center/cover;
+}
+.event6-3 {
+    background: url(/static/images/covid/childrens_day/3.jpeg) no-repeat center center/cover;
+}
+.event6-4 {
+    background: url(/static/images/covid/childrens_day/4.jpeg) no-repeat center center/cover;
+}
+.event6-5 {
+    background: url(/static/images/covid/childrens_day/5.jpeg) no-repeat center center/cover;
+}
+.event6-6 {
+    background: url(/static/images/covid/childrens_day/6.jpeg) no-repeat center center/cover;
+}
+.event6-7 {
+    background: url(/static/images/covid/childrens_day/7.jpeg) no-repeat center center/cover;
+}
+.event6-8 {
+    background: url(/static/images/covid/childrens_day/8.jpeg) no-repeat center center/cover;
+}
+.event6-9 {
+    background: url(/static/images/covid/childrens_day/9.jpeg) no-repeat center center/cover;
+}
+
+
+
+
+.event7-1 {
+    background: url(/static/images/covid/blanket_jam/1.jpeg) no-repeat center center/cover;
+}
+.event7-2 {
+    background: url(/static/images/covid/blanket_jam/2.jpeg) no-repeat center center/cover;
+}
+.event7-3 {
+    background: url(/static/images/covid/blanket_jam/3.jpeg) no-repeat center center/cover;
+}
+.event7-4 {
+    background: url(/static/images/covid/blanket_jam/4.jpeg) no-repeat center center/cover;
+}
+.event7-5 {
+    background: url(/static/images/covid/blanket_jam/5.jpeg) no-repeat center center/cover;
+}
+.event7-6 {
+    background: url(/static/images/covid/blanket_jam/6.jpeg) no-repeat center center/cover;
+}
+.event7-7 {
+    background: url(/static/images/covid/blanket_jam/7.jpeg) no-repeat center center/cover;
+}
+.event7-8 {
+    background: url(/static/images/covid/blanket_jam/8.jpeg) no-repeat center center/cover;
+}
+.event7-9 {
+    background: url(/static/images/covid/blanket_jam/9.jpeg) no-repeat center center/cover;
+}
+
+.event8-1 {
+    background: url(/static/images/covid/chips_pune/1.jpeg) no-repeat center center/cover;
+}
+.event8-2 {
+    background: url(/static/images/covid/chips_pune/2.jpeg) no-repeat center center/cover;
+}
+.event8-3 {
+    background: url(/static/images/covid/chips_pune/3.jpeg) no-repeat center center/cover;
+}
+.event8-4 {
+    background: url(/static/images/covid/chips_pune/4.jpeg) no-repeat center center/cover;
+}
+.event8-5 {
+    background: url(/static/images/covid/chips_pune/5.jpeg) no-repeat center center/cover;
+}
+.event8-6 {
+    background: url(/static/images/covid/chips_pune/6.jpeg) no-repeat center center/cover;
+}
+.event8-7 {
+    background: url(/static/images/covid/chips_pune/7.jpeg) no-repeat center center/cover;
+}
+.event8-8 {
+    background: url(/static/images/covid/chips_pune/8.jpeg) no-repeat center center/cover;
+}
+.event8-9 {
+    background: url(/static/images/covid/chips_pune/9.jpeg) no-repeat center center/cover;
 }
