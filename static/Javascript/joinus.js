@@ -54,9 +54,9 @@ const dateValidate = (event) => {
 
 const nameValidate = (event) => {
 	const name  = event.target.value;
-	if(name.length<3 || name.length>15)
+	if(name.length<3 || name.length>22)
 	{
-		alert("The name should contain 3-15 characters");
+		alert("The name should contain 3-22 characters");
 		event.target.value = '';
 		nameFlag = false;
 	}

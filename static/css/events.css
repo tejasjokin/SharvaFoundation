@@ -1,0 +1,42 @@
+.section{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+
+.section {
+    margin: 4%;
+  }
+.section h1{
+    text-align: center;
+}
+.section p{
+    margin: 20px 0;
+}
+  body {
+    font-family: sans-serif;
+  }
+
+  .carousel {
+    background: #EEE;
+    z-index: -1;
+    margin-bottom: 30px;
+  }
+
+  .carousel-cell {
+    width: 28%;
+    height: 200px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+
+  .carousel-cell.is-selected {
+    border: 2px solid black;
+    border-radius: 2px;
+  }
+
+  /* cell number */
+  .carousel-cell:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+

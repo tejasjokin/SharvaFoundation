@@ -5,6 +5,7 @@ head
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
   link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
   link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  link(rel='stylesheet' href='https://unpkg.com/flickity@2/dist/flickity.min.css')
   block style
     style
         include ../static/css/home.css
@@ -22,6 +23,8 @@ head
             ul
               li
                 a(href='/covid') Covid-19
+              li
+                a(href='/food') Food
               li  
                 a(href='/blooddonation') Blood Donation
               li
@@ -49,12 +52,11 @@ head
         .recent
           h2 Recent Events
           p
-           a(href="/independence") Independance Day
+           a(href="/covid") Chips Distribution - Pune
           p
-            a(href="/chocolate") Chocolate Distribution
-          //- p 3.
-          //- p 4.
-          //- p 5.
+            a(href="/covid") Blanket Distribution - Jammu
+          p
+            a(href="/food") Diwali Distribution - Jammu
         //- .address
         //-   p
         //-     | Address
@@ -79,11 +81,11 @@ head
             li
               a.fa.fa-foot.fa-facebook(href='https://www.facebook.com/Sharva-Foundation-571908020152850/?modal=admin_todo_tour' target='_blank')
             li
-              a.fa.fa-foot.fa-whatsapp(href='https://wa.me/917006616995' target='_blank')
+              a.fa.fa-foot.fa-whatsapp(href='https://wa.me/917517502268' target='_blank')
             li
               a.fa.fa-foot.fa-twitter(href='https://twitter.com/Sharvacharity' target='_blank')
             li
-              a.fa.fa-foot.fa-google(href="mailto:foundationsharva@gmail.com?subject=Joining a good cause" target='_blank')
+              a.fa.fa-foot.fa-envelope-o(href="mailto:foundationsharva@gmail.com?subject=Joining a good cause" target='_blank')
             li
               a.fa.fa-foot.fa-instagram(href='https://instagram.com/sharvafoundation?igshid=yubeg3h96wn4' target='_blank')
     block scripts

@@ -8,12 +8,13 @@ const bodyparser = require("body-parser");
 mongoose.connect('mongodb://localhost/SharvaFoundation', { useNewUrlParser: true, useUnifiedTopology: true }); //name of data base
 
 
-const port = 80;
+const port = 8000;
 
 //##################### mongoose schema's #####################
 
 const JoinUsSchema = new mongoose.Schema({
     date: String,
+    active:Boolean,
     name: String,
     DOB: String,
     email: String,
@@ -86,18 +87,11 @@ app.get('/covid', (req, res) => {
     res.status(200).render('covid.pug', params);
 })
 
-app.get('/independence', (req, res) => {
+app.get('/food', (req, res) => {
 
     const params = {}
-    res.status(200).render('independence.pug', params);
+    res.status(200).render('food.pug', params);
 })
-
-app.get('/chocolate', (req, res) => {
-
-    const params = {}
-    res.status(200).render('chocolate.pug', params);
-})
-
 
 //############## Blood Donation ############################
 
@@ -130,12 +124,13 @@ app.get('/joinus', (req, res) => {
 app.post('/joinus', (req, res) => {
 
     var myData = new Volunteer(req.body);
+    myData["date"]=Date.now();
+    myData["active"]=1;
     myData.save().then(() => {
         res.redirect(301, '/joinus');
     }).catch(() => {
         res.status(400).send("Unable to submit form please try again")
     });
-
 })
 
 
